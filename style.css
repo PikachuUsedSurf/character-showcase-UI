@@ -21,3 +21,7 @@ h1,h2,h3,h4,h5 {margin: 0;}
 .character-post-inside h3 { color: var(--default); font: italic 20px Bondoni Moda; margin: 40px 0 20px;}
 .character-post-inside h3 span {border-bottom: rgba(255,255,255, 0.4) solid 2px;}
 #aru { background-image: url(Aru_Sprite.webp); height: 200px; width: 350px; top: -1px; right: 2px; transform: scale(1.1); position: absolute; z-index: 2; filter: opacity(80%);}
+.skills { display: flex; flex-flow:row wrap; justify-content: space-evenly; align-items: center;}
+.skills, .skill {display: block; display: flex; margin: 10px; letter-spacing: 1px; text-align: center; max-width: auto;}
+/*.skills .skill img { margin: 35px 35px; padding: 5px; width: 50px; height: 50px; transform: scale(0.9); position: absolute; } */
+.skill h1 { font: 10px/100% Rubik;}
