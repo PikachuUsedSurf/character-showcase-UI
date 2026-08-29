@@ -2,5 +2,20 @@
   "name": "The Twins",
   "tag": "Mineral & star",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Conduit, Dual Afflatus. ⌽ At the start of the round, if The Twins' Harmonization is full, generates a precast of The Twins' Energy cards. ⌽ Set A Buff card gives Mineral Energy and Harmonization while Set B gives a buff to Crit stats and Harmonization, this buff card can only be cast once per round. ⌽ Set A Attack card costs 3 Mineral Energy and deals more DMG based on Energy consumed by allies that round. Set B Attack card costs 1 Star Energy and deals more DMG based on how many times it was cast that round. ⌽ Ult counts as both Star and Mineral afflatus, consumes all Energy, deals more DMG based on the Energy consumed, increases Crit Rate, Pen Rate gains Crit Convert.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

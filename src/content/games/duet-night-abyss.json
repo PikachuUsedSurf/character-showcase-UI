@@ -1,9 +1,9 @@
 {
   "name": "Duet Night Abyss",
   "accent": "#ff6ec7",
-  "status": "development",
+  "status": "live",
   "order": 4,
-  "description": "Element-driven ARPG roster — DPS and Support builds tracked, full kit data upload in progress.",
+  "description": "Element-driven ARPG roster — 28 characters, skill data and Mystic Maze rankings for most.",
   "tierModes": [
     { "slug": "overall", "name": "Overall" },
     { "slug": "mystic-maze", "name": "Mystic Maze" }

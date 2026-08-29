@@ -2,5 +2,20 @@
   "name": "Avgust",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE HoT, Lineup-Based Buffs. ⌽ Skill 1 deals damage, Dispels buffs, and grants DMG Bonus to units in front. ⌽ Skill 2 heals and grants DMG heal to units behind. ⌽ Insight I passively grants DMG Bonus to those in front and DMG heal to those behind. ⌽ Gain ATK bonus for each ally in front, and DMG taken reduction for each ally behind. ⌽ Placement in the team lineup should be adjusted to be in front when defense is needed and behind when offense is needed.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

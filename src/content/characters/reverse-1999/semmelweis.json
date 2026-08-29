@@ -2,5 +2,20 @@
   "name": "Semmelweis",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "B",
+    "roguelike": "A",
+    "reveries": "B"
+  },
+  "bio": "Archetype: AoE DPT, HP Burning, Array. ⌽ Skills consume self and ally HP. ⌽ S2 grants all allies DMG Bonus and [Fresh Blood] to a single ally. The ally with [Fresh Blood] gains additional DMG Bonus and consumes a small amount of current HP to gain additional Crit Rate. ⌽ Ult generates an Array that increases DMG Dealt based on missing HP and decreases DMG Taken by all allies. ⌽ Ult also puts her in the [Feral] state which procs a FUA at the end of the turn, dealing additional damage based on the number of times HP was consumed that turn. ⌽ High potential but requires team to be on the brink of death. Needs good healing and/or shielding.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

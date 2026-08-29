@@ -2,5 +2,20 @@
   "name": "Alexios",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "S",
+    "raid": "S",
+    "roguelike": "S",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Assassination, Ult DPT. ⌽ Instead of using Moxie, gains [Adrenaline] at the start of every round. If sufficient, [Adrenaline] stacks are consumed to generate an Ultimate. ⌽ Normal skills deal damage and generate [Adrenaline]. ⌽ Ultimate deals AoE damage, is considered an [Assassination], and grants [Blood of Isu], further increasing Ultimate damage on future casts. ⌽ Gains [Adrenaline] whenever an ally triggers [Assassination]. Additionally, if said ally has the [Assassination] role, has a chance to cast his Ultimate.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

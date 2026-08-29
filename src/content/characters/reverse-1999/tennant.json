@@ -2,5 +2,20 @@
   "name": "Tennant",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Bullet, Shield. ⌽ Her Insight casts her S2 as an Extra Action at the beginning of battle and when falling below 50% HP. ⌽ Reduces DMG Taken while her Shield from S2 is active. ⌽ Gains [Diamond Bullet] at the beginning of battle and after casting her Ult, which reduces enemy Reality DEF after attacking.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

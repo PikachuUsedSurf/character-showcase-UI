@@ -1,8 +1,21 @@
 {
   "name": "Fatutu",
-  "role": "Support",
+  "role": "Healer",
   "tag": "Mineral",
   "rarity": 6,
-  "bio": "A Mineral-Afflatus Mental-damage Arcanist built around Heal and Dispel utility with Extra Action turns.",
-  "kitPending": true
+  "bio": "Archetype: Extra Action, Cleanser, Healing, HP Share. ⌽ Gains [Spirit Shell]s at battle start. When the holder gets hit, transfers a shell to the other side (Fatutu↔enemies). Enemies with [Spirit Shell]s take more damage from Extra Actions. ⌽ Heals all team members when retrieving [Spirit Shell]s. Small chance to gain Moxie when applying [Spirit Shell]s to an enemy. ⌽ After a certain number of shell transfers, casts S1, applying [Spirit Shell]s and cleansing debuffs from allies. ⌽ S2 evenly redistributes team HP and retrieves all [Spirit Shell]s. ⌽ Ult applies all [Spirit Shell]s onto one target and inflicts [Shell Beacon]: When retrieving [Spirit Shell]s, immediately reapply them.",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

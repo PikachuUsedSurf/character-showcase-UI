@@ -2,5 +2,20 @@
   "name": "Noire",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "A",
+    "lucidscape": "S",
+    "raid": "S",
+    "roguelike": "S",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Ultimate Cycling, Reuse, Debuff. ⌽ At turn start: gains 1 Moxie and inflicts [Spotlight] on the healthiest enemy (by percentage). ⌽ Noire's attacks on [Spotlight]ed enemies randomly inflict [Rigidity], [Poison] or [Burn]. ⌽ S1 focuses all [Neg Stats] onto a single enemy. ⌽ Gains [Genius Inspiration] when inflicting [Spotlight] and when casting S2, increasing Ult reuse chance. ⌽ Ult deals more damage for each type or layer of [Neg Stats] on the enemy.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

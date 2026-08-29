@@ -2,5 +2,20 @@
   "name": "Matilda",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST DMG, Crit-Based. ⌽ Five star version of Lilya. High ST DPT with Ult. ⌽ Can inflict [Confusion]. ⌽ Cannot trigger her own Insight passives. ⌽ Portraits are unavailable due to her not being in the gacha pool. Only given out during Anniversaries.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

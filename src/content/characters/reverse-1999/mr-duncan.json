@@ -2,5 +2,20 @@
   "name": "Mr. Duncan",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Bullet, Crit-Based, Counter. ⌽ Grants Reality damage-buffing [Bullet]s to team. Adds additional Genesis damage when a crit is landed or an enemy is defeated. ⌽ S2 ripostes can hit enemies before they hit him. ⌽ Gains Moxie after 3 crits. Ult deals decent ST damage.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

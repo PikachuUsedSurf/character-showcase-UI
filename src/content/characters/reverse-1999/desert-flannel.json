@@ -2,5 +2,20 @@
   "name": "Desert Flannel",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Beast Synergy, DMG Buff, Counter. ⌽ Gains DMG Bonus with S2 riposte. ⌽ Ultimate grants team DMG Bonus to Beast allies. ⌽ Gains Moxie for every Beast teammate on stage entry for quick access to Ult. ⌽ Benefits the most from a mono-Beast team. ⌽ Lacks utility outside of Ult, healing locked to her Ult.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

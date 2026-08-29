@@ -2,5 +2,20 @@
   "name": "Spathodea",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "C",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: ST DPT, AP-Greedy. ⌽ Insight grants additional Crit Rate after applying [Burn] and inflicts [Burn] on Crit. ⌽ S2 grants self [Preignition], additional Crit Rate and a precast S1 next turn. ⌽ S1 deals additional Crit DMG while holding [Preignition]. ⌽ Ult deals additional Crit DMG, increased when enemy holds 15+ [Burn]. ⌽ Crit-reliant damage. Low Crit Rate = low consistency. ⌽ Cannot consistently achieve Ult [Burn] conditional without [Burn] support.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

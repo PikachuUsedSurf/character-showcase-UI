@@ -2,5 +2,20 @@
   "name": "Vila",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "S",
+    "raid": "S",
+    "roguelike": "A",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Multitarget Healing, Cleanser, Mental-Oriented Buff. ⌽ Grants a crit-focused ST buff, Mental Damage characters gain a stronger buff. ⌽ Heals the team passively when not actively casting incantations. ⌽ Provides even more passive healing during Ult and empowers her ST heal to proc an additional two times. ⌽ Gives Moxie and [Eureka] to a unit of your choice after using Ult. ⌽ While Ult is in effect, her buff also boosts skill scaling (higher Rank skills = higher bonus).",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Barbara",
   "tag": "Spirit",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Skill Transfer, Card-Star Up. ⌽ Decent skill damage and can provide shielding ⌽ Ult grants a strong, team-wide, long-lasting shield. ⌽ While Ult is in effect, Barbara's skills randomly change into allies' skills, and she gains Moxie every turn start. ⌽ During this period, you also gain a special card that doesn't consume AP every turn start. Using this card will raise the star level of the skill used before it by 1 and lower the star level of the skill used after it by 1.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

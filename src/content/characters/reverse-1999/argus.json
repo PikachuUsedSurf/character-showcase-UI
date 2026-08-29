@@ -2,5 +2,20 @@
   "name": "Argus",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "A",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: ST Debuff, High Tier Skill Synergy, Extra Action. ⌽ Grants all allies a DMG Bonus buff after casting an incantation (Higher Rank = Stronger Buff). ⌽ Skill 2 inflicts [Pinpointed] on one enemy, which increases DMG Taken and decreases Crit DEF. ⌽ [Pinpointed] stacks when holder is hit. ⌽ Casts [Grave Digger] after all ally skills resolve. Its tier depends on the total star count of the skills in the AP area. ⌽ [Grave Digger] grants Moxie at Rank 2-3, and guarantees a Crit at Rank 3. ⌽ Ultimate increases and refreshes [Pinpointed] stacks, and deals damage (more against [Pinpointed] enemies).",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

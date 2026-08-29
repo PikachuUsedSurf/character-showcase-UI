@@ -2,5 +2,20 @@
   "name": "Lucy",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "S+",
+    "raid": "S",
+    "roguelike": "S",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Dynamo, Extra Action, Skill Enhancement, Snowball. ⌽ Gain [Dynamo] when self and allies gain Moxie or [Eureka] or when an enemy is defeated. ⌽ Skills consume [Dynamo] to gain additional effects. ⌽ Consumes [Dynamo] at turn start to reinforce one of Lucy's skills. ⌽ Ultimate grants her Afflatus advantage against all enemies and increases the Afflatus advantage multiplier for the whole team. ⌽ Unleashes an FUA after casting Ult or whenever an enemy is defeated. ⌽ Gain [Data Iteration], granting a stacking ATK Buff after casting Ult or whenever an enemy is defeated.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

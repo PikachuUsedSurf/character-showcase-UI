@@ -2,5 +2,20 @@
   "name": "Buddy Fairchild",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Ultimate DPT, Buff Buildup. ⌽ Gains [Friendship Badge] when using skills or when an ally uses an Ultimate. ⌽ Increases ATK and Ult damage scaling based on [Friendship Badge] stacks. ⌽ If at max [Friendship Badge] at turn start, gains Moxie. Ult does not cost AP and is guaranteed to Crit. ⌽ After using Ult, grants additional DMG Bonus to all allies.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

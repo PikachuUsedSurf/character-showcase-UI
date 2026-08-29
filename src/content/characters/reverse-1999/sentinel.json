@@ -2,5 +2,20 @@
   "name": "Sentinel",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Bloodtithe, Bullet, HP Burn, Extra Action. ⌽ Gains [Bloodtithe] when losing HP. All attacks are considered [Retribution], meaning that they scale with HP instead of ATK. ⌽ Skill 1 deals damage and applies [Fresh Wound] on self, which causes HP loss over time based on its count. ⌽ Skill 2 consumes [Bloodtithe] to grant [Dread Bullet]s to self and the ally directly in front. Auto-fires Skill 1 a few times every turn until out of [Dread Bullet]s. ⌽ [Dread Bullet] grants buffs to its holder and increases damage dealt based on max HP. ⌽ Chance to gain Moxie or [Fresh Wound] when using a bullet. ⌽ Ultimate consumes all [Fresh Wound] to increase damage, and heals self afterwards.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

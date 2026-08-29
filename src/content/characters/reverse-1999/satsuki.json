@@ -2,5 +2,20 @@
   "name": "Satsuki",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE DPT, Petrify. ⌽ Inflicts [Rigidity] and stacks it up to inflict/maintain [Petrify]. ⌽ Great offensive partner for Druvis III in Plant teams. ⌽ High reliance on being able to [Petrify]. ⌽ Insight improves both her damage and survivability.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

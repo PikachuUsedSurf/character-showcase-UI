@@ -2,5 +2,20 @@
   "name": "Yenisei",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: ST Heal, Immunity. ⌽ Skill 2 grants flexible ST healing and [Sturdiness]. ⌽ Rank 2/3 Skill 1 reduces enemy's DMG Dealt. ⌽ Ultimate provides team shield and one turn of [Immunity]. Also gains [Flow]. ⌽ Consumes [Flow] to gain Moxie and tier up own cards.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

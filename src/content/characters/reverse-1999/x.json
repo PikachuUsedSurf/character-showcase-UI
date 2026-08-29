@@ -2,5 +2,20 @@
   "name": "X",
   "tag": "Intellect",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Dispel, Moxie Reduction. ⌽ Buff-dispel-focused kit. Lacks consistency with unbuffed enemies. ⌽ Most consistent [Silence]-er against buffed enemies. ⌽ Decent Moxie reduction on Ult. ⌽ Extremely niche but really good within said niche.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Ulrich",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Dynamo, Extra Action. ⌽ Deploys [Pulsing Field] at turn start if it isn't already active. Gains [Dynamo] and injects it into [Pulsing Field] to upgrade it at turn end. ⌽ Enters different channel statuses when using S1, S2, and Ultimate, increasing enemy damage taken, increasing ally Ultimate Might, and dealing damage at turn end, respectively. ⌽ Gains an [Encryption Key] corresponding to the current channel status at turn end or when reaching [Pulsing Field] Lv. 3. The [Encryption Key] will boost the channels' turn-end effects. ⌽ If a channel is already active and its corresponding skill is used again, inject [Dynamo] and gain [Ceremonious: Ultimate Might] instead.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Windsong",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Preparation Skill, Burst Damage, Extra Action. ⌽ Gain [Measure] whenever an ally Crits or applies [Confusion], increasing Crit Rate and Crit DMG. ⌽ Skills generate [Eureka], S1 consumes [Eureka] to boost damage and convert excess Crit Rate to Crit DMG. ⌽ Skill 2 generates multiple precast skills to stack/store. ⌽ Ultimate converts S2 cards into S1, then immediately launches all of her in-hand incantations. ⌽ During Ult, no longer loses [Eureka] and excess [Eureka] gained is instead converted into [Measure]. ⌽ Does incredible damage with the new Tuning unlocked in Chapter 7.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Difficult"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Brimley",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Extra Action, Cleanser. ⌽ Skill 2 applies [Let's Ride] on one ally, which boosts ATK and cleanses debuffs. ⌽ Gains 1 Moxie after 3 Extra Actions by the buffed ally (once per turn). ⌽ Gains 1 stack of [Equestrianism] when using Skill 1 or when any ally takes Extra Action (once per turn). At 3 stacks, using S1 causes the buffed ally to cast their S2. ⌽ Ult causes the buffed ally to cast their S1.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

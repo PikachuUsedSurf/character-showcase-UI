@@ -2,5 +2,20 @@
   "name": "Click",
   "tag": "Spirit",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: DMG Reduction, ST DPT. ⌽ Ult applies [Lens Cap] to allies for Reality Damage reduction. ⌽ Further reduces damage taken through [Blind]. ⌽ Deals decent Mental Damage. ⌽ Useless against Mental Damage.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Barcarola",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Inspiration, Star Impromptu, Buff Build-Up. ⌽ [Impromptu Incantation] becomes Star Afflatus, and [Inspiration] is more likely to be distributed to Attack skills. ⌽ Gains [Eureka] at turn start or whenever an ally casts an Attack skill. ⌽ Skills consume [Eureka] to strengthen [Impromptu Incantation] and increase its hit count. ⌽ Ult gives [Quartet] to self and one ally, and extends [Quartet]'s duration on other allies. It also restores 3 [Eureka] to allies with [Quartet] and refunds a Moxie. ⌽ Units with [Quartet] gain an ATK buff; buff improves for each unit in [Quartet]. When a [Quartet] unit casts an Attack skill, gains one [Inspiration] for the round and all allies lose one [Eureka].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

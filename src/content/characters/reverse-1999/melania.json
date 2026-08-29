@@ -2,5 +2,20 @@
   "name": "Melania",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: ST DPT, Ultimate Cycling, AP-Greedy. ⌽ Ultimate grants [Thief Master]; empowering the next incanation used. ⌽ Ultimate also grants [Fixed Plan], which increases Ultimate Might. ⌽ Skill 1 deals ST mental dmg, reduces enemy moxie at higher ranks and can consume [Thief Master] to steal 1 moxie from the enemy. ⌽ Skill 2 deals mass mental damage with leech rate and can consume [Thief Master] to increase leech rate and gain 1 additional moxie. ⌽ Proccing [Master Thief] allows faster Ultimate cycling and [Fixed Plan] stacking. ⌽ Incredible Ultimate damage at max (6) [Fixed Plan]. Excells at long fights.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

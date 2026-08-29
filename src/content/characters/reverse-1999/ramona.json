@@ -2,5 +2,20 @@
   "name": "Ramona",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: DoT, Poison Enhance, Poison Resolve. ⌽ Gain [Exorcist-for-Hire] at turn start or from Skill 1, which is spent at turn start to rewrite a equal amount of skills with [Possessed]. ⌽ When a [Possessed] Skill is cast, Ramona does a follow-up attack against all enemies which inflicts [Poison] and [Spirit Repellent]. Gain Moxie if this effect is triggered at least once during a turn. ⌽ [Spirit Repellent] causes [Poison] to resolve an additional time at turn end without reducing duration. When an enemy dies, all enemies gain this effect next turn. ⌽ Skill 2 resolves poison on target without reducing duration. ⌽ Ultimate converts [Poison] on target into [Expellant], which is a special [Poison] that deals more damage the longer it exists. Gain a precast [Possessed] Skill 2 next turn.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

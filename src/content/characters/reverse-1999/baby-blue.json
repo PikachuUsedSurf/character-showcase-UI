@@ -2,5 +2,20 @@
   "name": "Baby Blue",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Mental DEF Debuff, Crowd Control. ⌽ Inflicts various debuffs including ST Mental DEF down, [Nightmare] and AoE DMG Taken up. ⌽ Applies defensive effects like enemy DMG Dealt down, ally DMG Taken down and ally Crit DEF up. ⌽ Insight helps her tank Mental DMG, useless against Reality DMG.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

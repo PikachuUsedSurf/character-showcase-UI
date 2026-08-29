@@ -2,5 +2,20 @@
   "name": "Ulu",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: DMG Buff, DoT. ⌽ Inflicts [Burn] and provides healing with passives. ⌽ Useful for Spathodea, she falls behind compared to any decent support. ⌽ Niche skillset. ⌽ Mediocre Ult buff without [Burn].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

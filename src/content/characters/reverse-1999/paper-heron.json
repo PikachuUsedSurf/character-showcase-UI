@@ -2,5 +2,20 @@
   "name": "Paper Heron",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Inspiration, Plant Impromptu. ⌽ [Impromptu Incantation] becomes Plant afflatus and deals Reality DMG. It can only attack a few times per turn; any excess inspiration will increase the power of those few hits. It'll automatically split against multiple enemies and deal more damage when there's only one enemy. ⌽ Upon entering battle, deploys an array that strengthens [Impromptu Incantation] attacks. This array levels up and becomes more powerful for each [Inspiration] unit in the team. Casting an Ultimate also level up the array (if not already at maximum level). ⌽ [Inspiration] is more likely to be distributed to Attack incantations. All allies recover [Eureka] at turn start and any active action will add [Inspiration] to [Impromptu Incantation] that turn. ⌽ Skills buff [Impromptu Incantation] damage.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

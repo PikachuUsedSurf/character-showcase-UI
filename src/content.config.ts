@@ -9,6 +9,7 @@ const games = defineCollection({
     status: z.enum(["live", "development", "planned"]),
     order: z.number(),
     description: z.string(),
+    enabled: z.boolean().optional(),
     tierModes: z
       .array(
         z.object({

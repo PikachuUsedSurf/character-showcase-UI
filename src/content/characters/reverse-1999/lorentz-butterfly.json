@@ -2,5 +2,20 @@
   "name": "Lorentz Butterfly",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Lingering Glow, Skill Reuse, Self Rankup. ⌽ Raise [Burn] cap and increase DMG Bonus and Incantation Might based on number of [Lingering Glow] stacks and allies. ⌽ [Lingering Glow] units gain Moxie at turn end if they didn't use Ultimate that turn, and their Ultimates don't take up deck space. ⌽ Skills rank up when used depending on the number of skills of the same type used that turn. High tier Skill 1 deals fixed damage proportional to total skill damage dealt during the turn. ⌽ Skill 2 allows [Lingering Glow] units to inflict more [Burn]. ⌽ Ultimate creates several copies of a selected skill to be used next turn without generating Moxie or spending AP.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

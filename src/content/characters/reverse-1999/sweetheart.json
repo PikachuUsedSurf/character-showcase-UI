@@ -2,5 +2,20 @@
   "name": "Sweetheart",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST DPT, AoE DPT, ATK Debuff. ⌽ Stronger against debuffed enemies. ⌽ Relies on own Ult and Insights; lacks consistency. ⌽ Reduces own DMG Taken through [Enchanted] debuff. ⌽ Ult inflicts ST [Daze] and reduces the enemy Reality DEF and Mental DEF.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

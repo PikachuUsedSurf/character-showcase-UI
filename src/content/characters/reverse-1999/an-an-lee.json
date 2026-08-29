@@ -2,5 +2,20 @@
   "name": "An-an Lee",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "B",
+    "roguelike": "C",
+    "reveries": "B"
+  },
+  "bio": "Archetype: Empwer Incantation, DMG Buff. ⌽ Stance swaps each round (Tank↔Damage) ⌽ Rightmost card ranks up when entering Damage Stance and using Ultimate grants [Empower Incantation I] for 2 rounds. ⌽ Deals decent damage with some CC due to frequent access of high-tier Skill 1. ⌽ Skill 2 grants allies DMG Bonus and DMG taken reduction (like Sonetto's buff).",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Jessica",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "C",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: ST DPT, AoE DPT, Poison-Dependent. ⌽ More [Poison] stacks ➤ Higher Skill 1 DMG. Up to 600% ST damage with 3 [Poison] stacks. ⌽ Insight 1, 3 and Ultimate let her inflict [Poison] on her own to proc DMG Bonus. ⌽ Synergy: [Poison] or [Neg Status] applicants (Isolde, Sotheby, Kanjira, etc.)",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

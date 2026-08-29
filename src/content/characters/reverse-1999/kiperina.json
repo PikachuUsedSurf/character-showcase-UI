@@ -2,5 +2,20 @@
   "name": "Kiperina",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Inspiration, Extra Action, AFK Shield. ⌽ Gains [Eureka] when an ally or Impromptu Incantation lands a Crit. Converts consumed and excess [Eureka] gained into [Auroral Corona]. ⌽ [Auroral Corona] gives team DMG Bonus and additional effects based on its stacks count, including giving all skills extra [Inspiration] and allowing Impromtu Incantation to convert excess Crit Rate into Crit DMG. ⌽ At turn start, cleanses [Control] statuses from allies and consumes [Eureka] to cast Skill 2 based on [Eureka] consumed. ⌽ Skill 2 is a stacking shield that can also buff DMG Bonus and Crit Rate. ⌽ Ultimate cleanses all debuffs from allies and reduces enemy Crit Resist and DMG Taken Reduction.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Dikke",
   "tag": "Beast",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE Healing, ST DPT. ⌽ Some burst healing on units under half HP. ⌽ Ult cleanses debuffs and grants [Immunity] to self. ⌽ Decent ST damage. ⌽ Flexible kit; a generalist option master of none.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

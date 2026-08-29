@@ -2,5 +2,20 @@
   "name": "Charlie",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "C",
+    "roguelike": "B",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST DPT, AoE DPT, Dispel. ⌽ High, consistent ST damage with lenient skill requirements for bonus DMG. ⌽ Ultimate becomes an AoE nuke at higher Portrait levels. ⌽ The only 5✦ carry that actually slays. ⌽ Insight 3 passive overwrites existing buffs; synergy with non-DMG-Bonus buffers (Baby Blue, Shamane, etc.) ⌽ Very low base Crit Rate; must invest heavily for Crit-oriented play.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

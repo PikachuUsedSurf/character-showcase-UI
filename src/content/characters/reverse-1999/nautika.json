@@ -2,5 +2,20 @@
   "name": "Nautika",
   "tag": "Spirit",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Bloodtithe, HP Burn, Extra Action. ⌽ Gains [Higge] after every action, which increases max HP. ⌽ Gains [Bloodtithe] when losing HP. Instead of moxie, uses [Faith] to cast Ultimate. Gains [Faith] when [Bloodtithe] increases. ⌽ Skills consume ally HP to deal damage based on her max HP. ⌽ Gains [Mother Spirit's Guidance] when using S2. In this state, launches a follow-up attack when [Bloodtithe] increases. ⌽ Ultimate consumes all [Bloodtithe] to deal damage to random enemies based on the amount consumed.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Name Day",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "B",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "A",
+    "roguelike": "B",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Ultimate Buff, Dispel. ⌽ Gains Moxie whenever the ally in front uses their Ult. ⌽ Applies [Ceremonious] to the ally in front after taking action. ⌽ Ult boosts DMG Bonus for Ults for the team and allows the ally in front to use Ult without consuming AP. ⌽ Skill 1 can dispel [Counter] status.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Ms. NewBabel",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Reality DEF, Taunt, Counter. ⌽ Strong self defense with [Guarding Instinct] at Insight 1 and [Shield] from S2. ⌽ Damage relies on ripostes. Prone to die if drawn too many attacks. ⌽ Skills/Ultimate rely on Reality DEF; weaker against Mental Damage.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

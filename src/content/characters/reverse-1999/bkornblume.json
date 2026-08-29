@@ -2,5 +2,20 @@
   "name": "Bkornblume",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "B",
+    "raid": "B",
+    "roguelike": "A",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Reality DEF Debuff, Crowd-Control. ⌽ Skill 2 inflicts AoE Reality DEF debuff and DMG Taken increase. ⌽ Ultimate inflicts ST [Seal] or Moxie reduction ⌽ Best Reality Damage support at release. ⌽ Insights grant various DMG and DEF bonuses against debuffed targets. ⌽ Unexpectedly high damage dealt with Skill 1 and Ultimate.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

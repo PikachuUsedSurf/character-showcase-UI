@@ -3,6 +3,19 @@
   "role": "DPS",
   "tag": "Star",
   "rarity": 6,
-  "bio": "The Assassin's Creed crossover Arcanist — a Star-Afflatus Reality-damage dealer built around Assassination and Riposte mechanics.",
-  "kitPending": true
+  "bio": "Archetype: Assassination, Extra Action, Ultimate Damage, Poison. ⌽ Instead of using Moxie, gains [Synchronization] from using skills that trigger [Assasination] in order to cast Ultimate. ⌽ Skills are considered [Assassination]s. Gains [Master Assassin], enhancing the effects of [Assassination]. When attacked while at low HP, enters [Shadowstalk], increasing Crit DMG. ⌽ Skill 2 taunts target(s), reduces damage taken for self and ripostes all attacks that turn with [Counter Kill]. ⌽ Ultimate casts [Arrow of Faith]/[Edge of Faith] multiple times, dealing additional damage if the target's HP is above/below a certain percentage before casting [Death be not Unkind]. ⌽ Uses a weapon system for ability enhancement. Primary weapon choice determines between extra action, Ultimate, and [Poison] utility, and secondary weapon choice determines granular effects.",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }
