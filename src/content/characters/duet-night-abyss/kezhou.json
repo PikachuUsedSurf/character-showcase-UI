@@ -1,0 +1,13 @@
+{
+  "name": "Kezhou",
+  "role": "DPS",
+  "tag": "Lumino",
+  "bio": "A weapon-damage DPS proficient with every weapon type, letting his ultimate assimilate the stats of whatever gear is equipped into a spectral arsenal. Constantly shifts between ranged and melee bursts across a Battery Phase and Discharge Phase for high mobility.",
+  "kitPending": true,
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Ephemeral Lumina"
+    }
+  ]
+}

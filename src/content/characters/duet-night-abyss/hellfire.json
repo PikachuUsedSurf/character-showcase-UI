@@ -6,5 +6,11 @@
   "kitPending": true,
   "tiers": {
     "overall": "B"
-  }
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Punitive Inferno"
+    }
+  ]
 }

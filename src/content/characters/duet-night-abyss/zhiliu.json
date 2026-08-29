@@ -7,5 +7,11 @@
   "tiers": {
     "overall": "S+",
     "mystic-maze": "S"
-  }
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Eternal Farewell"
+    }
+  ]
 }

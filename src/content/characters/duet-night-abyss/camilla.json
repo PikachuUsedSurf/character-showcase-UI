@@ -6,5 +6,11 @@
   "kitPending": true,
   "tiers": {
     "overall": "A"
-  }
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Dregs of Glimmer"
+    }
+  ]
 }

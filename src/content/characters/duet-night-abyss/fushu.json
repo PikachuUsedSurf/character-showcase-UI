@@ -7,5 +7,11 @@
     "overall": "S+",
     "mystic-maze": "S"
   },
-  "kitPending": true
+  "kitPending": true,
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Halcyon Gracefall"
+    }
+  ]
 }

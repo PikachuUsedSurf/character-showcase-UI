@@ -229,17 +229,11 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
 
   .stat-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
     margin: 22px 0;
-  }
-
-  @media (max-width: 520px) {
-    .stat-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
 
   .stat {

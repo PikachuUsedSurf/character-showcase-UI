@@ -6,5 +6,11 @@
   "kitPending": true,
   "tiers": {
     "mystic-maze": "S"
-  }
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Remanent Reminiscence"
+    }
+  ]
 }

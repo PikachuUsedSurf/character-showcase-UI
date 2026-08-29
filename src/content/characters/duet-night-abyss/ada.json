@@ -6,5 +6,11 @@
   "kitPending": true,
   "tiers": {
     "overall": "S+"
-  }
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "The Best Day"
+    }
+  ]
 }
