@@ -1,0 +1,80 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Nav from "../../../components/Nav.astro";
+import Dossier from "../../../components/Dossier.astro";
+
+export async function getStaticPaths() {
+  const characters = await getCollection("characters");
+  return characters.map((c) => {
+    const [gameId, slug] = c.id.split("/");
+    return {
+      params: { game: gameId, slug },
+      props: { character: c, gameId },
+    };
+  });
+}
+
+const { character, gameId } = Astro.props;
+const game = await getEntry("games", gameId);
+if (!game) throw new Error(`Unknown game: ${gameId}`);
+
+const { name, role, affiliation, unitNo, rarity, bio, portrait, sprite, stats, skills, kitPending } = character.data;
+const portraitUrl = portrait ? `/images/${gameId}/${portrait}` : sprite ? `/images/${gameId}/${sprite}` : undefined;
+---
+
+<BaseLayout title={name} description={bio ?? `${name} — ${role}, ${game.data.name}`} accent={game.data.accent}>
+  <Nav game={{ slug: gameId, name: game.data.name }} active="roster" />
+  <div class="wrap">
+    <p class="crumbline"><a href={`/${gameId}`}>← Back to roster</a></p>
+
+    {kitPending && (
+      <div class="pending-banner">Full kit data for {name} hasn't been uploaded yet — the fields below reflect what's confirmed so far.</div>
+    )}
+
+    <Dossier
+      name={name}
+      role={role}
+      affiliation={affiliation}
+      unitNo={unitNo}
+      rarity={rarity}
+      bio={bio}
+      portrait={portraitUrl}
+      stats={stats}
+      skills={skills}
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 28px 90px;
+  }
+
+  .crumbline {
+    margin: 0 0 24px;
+  }
+
+  .crumbline a {
+    font: 600 11px var(--f-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .crumbline a:hover {
+    color: var(--accent);
+  }
+
+  .pending-banner {
+    border: 1px solid var(--line-strong);
+    background: var(--panel);
+    color: var(--muted);
+    font: 400 12px/1.6 var(--f-body);
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+</style>

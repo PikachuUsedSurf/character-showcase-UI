@@ -1,0 +1,47 @@
+{
+  "name": "Aru Rikuhachima",
+  "role": "Striker",
+  "tag": "Crit / Burst",
+  "affiliation": "Gehenna Academy",
+  "unitNo": "068",
+  "rarity": 3,
+  "bio": "The self-proclaimed Boss of Club Problem Solver 68, Aru is a 2nd-year student at Gehenna Academy who conducts her illegal business however she pleases. While she always puts on a cool, villainous façade, she has a habit of breaking character when teased — meticulous and caring beneath the conceited persona she wears.",
+  "portrait": "aru-portrait.webp",
+  "sprite": "aru-sprite.webp",
+  "stats": [
+    { "label": "Crit Dmg", "value": "+26.6%" },
+    { "label": "EX Crit Rate", "value": "+38.3%" },
+    { "label": "EX Cost", "value": "2 → 5" },
+    { "label": "Cooldown", "value": "25s" }
+  ],
+  "skills": [
+    {
+      "name": "Hard Boiled Shot",
+      "jp": "ハードボイルドショット",
+      "type": "EX Skill",
+      "desc": "Deal 274–521% damage to one enemy. Deal an additional 292–554% damage to enemies in a circular area around the targeted enemy.",
+      "value": "521%"
+    },
+    {
+      "name": "Noir Shoot",
+      "jp": "ノワールシュート",
+      "type": "Passive",
+      "desc": "Every 25 seconds, deal 152–290% damage to one enemy. 50% chance to deal an additional 251–476% damage to enemies in a circular area around the targeted enemy.",
+      "value": "290%"
+    },
+    {
+      "name": "President's Dignity",
+      "jp": "社長の威厳",
+      "type": "Passive",
+      "desc": "Increase Critical Damage.",
+      "value": "+26.6%"
+    },
+    {
+      "name": "Outlaw Style",
+      "jp": "アウトローの流儀",
+      "type": "Sub",
+      "desc": "Increase Critical Rate of EX Skill.",
+      "value": "+38.3%"
+    }
+  ]
+}

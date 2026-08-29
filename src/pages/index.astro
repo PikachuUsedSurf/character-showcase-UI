@@ -1,0 +1,188 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import GameCard from "../components/GameCard.astro";
+
+const games = (await getCollection("games")).sort((a, b) => a.data.order - b.data.order);
+const characters = await getCollection("characters");
+
+const glyphs: Record<string, string> = {
+  "honkai-star-rail": "HSR",
+  "reverse-1999": "R99",
+  "duet-night-abyss": "DNA",
+};
+
+const cards = games.map((game) => {
+  const gameCharacters = characters.filter((c) => c.id.startsWith(`${game.id}/`));
+  const withSprite = gameCharacters.find((c) => c.data.sprite);
+  return {
+    game,
+    characterCount: gameCharacters.length,
+    heroImage: withSprite ? `/images/${game.id}/${withSprite.data.sprite}` : undefined,
+    glyph: glyphs[game.id] ?? game.data.name.slice(0, 3).toUpperCase(),
+  };
+});
+---
+
+<BaseLayout title="Select Deployment" description="One archive, one interface, four titles — pick a game to browse its roster.">
+  <Nav />
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Select Deployment</p>
+      <h1>Choose your operation</h1>
+      <p>One archive, one interface, {games.length} titles tracked. Every game below runs the same dossier, roster, and tier-list system — only the accent color and the data change.</p>
+      <div class="query">
+        <input type="text" placeholder="search across all titles..." />
+        <span>⏎ SEARCH</span>
+      </div>
+    </div>
+
+    <div class="grid-head">
+      <h2>Available Titles</h2>
+      <span>{games.length} registered</span>
+    </div>
+
+    <div class="games">
+      {cards.map(({ game, characterCount, heroImage, glyph }) => (
+        <GameCard
+          slug={game.id}
+          name={game.data.name}
+          accent={game.data.accent}
+          status={game.data.status}
+          description={game.data.description}
+          characterCount={characterCount}
+          heroImage={heroImage}
+          glyph={glyph}
+        />
+      ))}
+    </div>
+
+    <div class="foot">
+      <p>ARCHIVE NETWORK — hub v0.1</p>
+      <p>one component system · per-title accent tokens</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .hero {
+    padding: 72px 0 44px;
+    text-align: center;
+  }
+
+  .hero .eyebrow {
+    font: 600 11px/1 var(--f-mono);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  .hero h1 {
+    font: 700 clamp(32px, 5.4vw, 54px)/1.05 var(--f-display);
+    color: var(--ink-hi);
+    text-transform: uppercase;
+  }
+
+  .hero p {
+    font: 400 14.5px/1.7 var(--f-body);
+    color: var(--muted);
+    max-width: 52ch;
+    margin: 18px auto 0;
+  }
+
+  .query {
+    max-width: 480px;
+    margin: 32px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--line-strong);
+    background: var(--panel);
+    padding: 11px 16px;
+  }
+
+  .query::before {
+    content: ">";
+    color: var(--accent);
+    font: 700 14px var(--f-mono);
+  }
+
+  .query input {
+    flex: 1;
+    background: none;
+    border: 0;
+    color: var(--ink);
+    font: 400 13px var(--f-mono);
+    outline: 0;
+  }
+
+  .query input::placeholder {
+    color: var(--dim);
+  }
+
+  .query span {
+    font: 500 9.5px var(--f-mono);
+    color: var(--dim);
+    letter-spacing: 0.05em;
+  }
+
+  .grid-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 56px 0 22px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .grid-head h2 {
+    font: 700 15px var(--f-display);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-hi);
+  }
+
+  .grid-head span {
+    font: 500 10.5px var(--f-mono);
+    color: var(--dim);
+    letter-spacing: 0.05em;
+  }
+
+  .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 760px) {
+    .games {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .foot {
+    padding: 0 0 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+
+  .foot p {
+    font: 400 11.5px var(--f-mono);
+    color: var(--dim);
+    margin: 0;
+  }
+</style>
