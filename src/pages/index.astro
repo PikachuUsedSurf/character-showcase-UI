@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
 import GameCard from "../components/GameCard.astro";
 
-const games = (await getCollection("games")).sort((a, b) => a.data.order - b.data.order);
+const games = (await getCollection("games", (g) => g.data.enabled !== false)).sort((a, b) => a.data.order - b.data.order);
 const characters = await getCollection("characters");
 
 const glyphs: Record<string, string> = {
@@ -25,7 +25,7 @@ const cards = games.map((game) => {
 });
 ---
 
-<BaseLayout title="Select Deployment" description="One archive, one interface, four titles — pick a game to browse its roster.">
+<BaseLayout title="Select Deployment" description="One archive, one interface — pick a game to browse its roster.">
   <Nav />
   <div class="wrap">
     <div class="hero">
