@@ -2,9 +2,36 @@
   "name": "Hilda",
   "role": "DPS",
   "tag": "Pyro",
+  "rarity": 5,
   "bio": "A skill-damage-oriented fighter with dual blades and grenade launcher, summoning spinning Dirtexpeller turrets that fire laser beams around her.",
-  "kitPending": true,
   "tiers": {
     "overall": "A"
-  }
+  },
+  "skills": [
+    {
+      "name": "Pyrolytic Cleaning",
+      "type": "Active",
+      "desc": "Commands all [Dirtexpellers] to continuously revolve around Hilda and fire [Hyperthermal Purgejets], during which the duration timer for all [Light Dirtexpellers] pauses. [Hyperthermal Purgejets] deal Pyro Damage to enemies. Defeating an enemy has a chance to restore Sanity for Hilda."
+    },
+    {
+      "name": "Wholehearted Service",
+      "type": "Active",
+      "desc": "Deals Pyro Damage to surrounding enemies and inflicts [Disarm] on them. For each target hit, summons 1 [Light Dirtexpeller] around Hilda and resets the duration timer for all [Light Dirtexpellers]. Carries 2 [Heavy Dirtexpellers] around. [Heavy Dirtexpellers] and [Light Dirtexpellers] automatically target and shoot nearby enemies once every 3s, dealing Pyro Damage. A maximum of 6 [Light Dirtexpellers] can exist at the same time."
+    },
+    {
+      "name": "Automatic Sanitizing",
+      "type": "Active",
+      "desc": "Carries 2 [Heavy Dirtexpellers] that automatically target and shoot nearby enemies once every 3s, dealing Pyro Damage. When dodging, Hilda reloads her ranged weapon Magazine to maximum and gains [Elegant Anger] for a period of time."
+    },
+    {
+      "name": "Multitasking",
+      "type": "Active",
+      "desc": "[Dirtexpeller] has a chance to fire 1 additional projectile, the probability equals to [30%+20%×Hilda's Ranged Weapon Multishot]. Increases the damage of [Hyperthermal Purgejet] by [30%+20%×Hilda's Ranged Weapon Multishot]."
+    },
+    {
+      "name": "Hellforge",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Pyro teammate(s)."
+    }
+  ]
 }

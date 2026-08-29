@@ -2,6 +2,33 @@
   "name": "Randy",
   "role": "DPS",
   "tag": "Electro",
+  "rarity": 4,
   "bio": "Fights with a sword and pistol in close-to-mid range.",
-  "kitPending": true
+  "skills": [
+    {
+      "name": "Legitimate Slackness",
+      "type": "Active",
+      "desc": "Deploys a [Barrier] in front of Randy and deals Electro Damage to nearby enemies. [Barrier] consumes Sanity over time, during which Randy cannot move or use any weapon and is immune to Hitstun when taking damage. [Barrier] inflicts [Overwork Grudge] on nearby enemies. Using the skill again can withdraw the [Barrier]."
+    },
+    {
+      "name": "Special Gift",
+      "type": "Active",
+      "desc": "Throws 1 [Bespoke Shield] forward, causing [Impact] 1 time when it halts. [Bespoke Shield] triggers [Impact] once every 3s when it's on the battlefield. [Impact] deals damage only against target's Shield based on Randy's DEF, and grants an Ultra Shield based on Randy's DEF to teammate(s) within range. For targets with Shield that has reached 0, [Impact] paralyses them."
+    },
+    {
+      "name": "Cavalier Composure",
+      "type": "Active",
+      "desc": "When Randy successfully grants an Ultra Shield to a teammate, applies 1 stack that increases their DEF based on Randy's DEF to them, up to 10 stacks."
+    },
+    {
+      "name": "Well-Deserved Break",
+      "type": "Active",
+      "desc": "Once [Barrier] has absorbed damage equivalent to 70% of Randy's Max HP, consumes Sanity to reset the [Barrier] and deals the same Electro Damage of [Legitimate Slackness] barrier deployment 1 time."
+    },
+    {
+      "name": "Holdfast",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases DEF for the character and their nearby teammate(s)."
+    }
+  ]
 }

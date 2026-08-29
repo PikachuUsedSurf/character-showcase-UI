@@ -2,11 +2,38 @@
   "name": "Hellfire",
   "role": "Tank",
   "tag": "Pyro",
+  "rarity": 4,
   "bio": "The Warden of the Inferno and director of the Royal Military Prison. Taunts enemies into attacking her and deals damage that scales off her own Max HP — a self-sustaining frontline.",
-  "kitPending": true,
   "tiers": {
     "overall": "B"
   },
+  "skills": [
+    {
+      "name": "Raging Inferno",
+      "type": "Active",
+      "desc": "Enters [Retribution] state."
+    },
+    {
+      "name": "Cage of Despair",
+      "type": "Active",
+      "desc": "Deals Pyro Damage to surrounding enemies and taunts them."
+    },
+    {
+      "name": "Retributive Resolve",
+      "type": "Active",
+      "desc": "Increases Max HP and continuously restores HP."
+    },
+    {
+      "name": "Guilty Verdict",
+      "type": "Active",
+      "desc": "Increases damage dealt to enemies taunted by Hellfire."
+    },
+    {
+      "name": "Aetherflame",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Pyro teammate(s)."
+    }
+  ],
   "stats": [
     {
       "label": "Signature Weapon",

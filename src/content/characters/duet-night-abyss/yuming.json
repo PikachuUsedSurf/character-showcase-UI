@@ -2,9 +2,36 @@
   "name": "Yuming",
   "role": "DPS",
   "tag": "Electro",
+  "rarity": 5,
   "bio": "Wields polearm and assault rifle, empowering his Plunge Attack for huge single hits. Doubles as a top-tier enabler and sub-DPS, buffing the team and dealing heavy off-field damage — his ultimate summons the dragon Xuanjiao and grants hit-stun immunity.",
   "tiers": {
     "overall": "S"
   },
-  "kitPending": true
+  "skills": [
+    {
+      "name": "Precipitous Thunderfall",
+      "type": "Active",
+      "desc": "Yuming leaps into the air and replaces the next Plunging Attack with [Starlight Descent]. Using this skill in [Xuanjiao Manifest] state grants Yuming 1 [Reverse Scale]. When the amount of [Reverse Scale] reaches its maximum, [Starlight Descent] is enhanced to [Starstorm Descent]."
+    },
+    {
+      "name": "Grimscales",
+      "type": "Active",
+      "desc": "Deals Electro Damage to enemies in front and enters [Xuanjiao Manifest] state."
+    },
+    {
+      "name": "Soaring Sky-High",
+      "type": "Active",
+      "desc": "When dealing Skill DMG, apply 1 stack of [Battle Frenzy] to enemies — decreases their Electro Resistance (up to 3 stacks)."
+    },
+    {
+      "name": "Thunder Roars",
+      "type": "Active",
+      "desc": "Grants 6 [Reverse Scales] when using [Grimscales]."
+    },
+    {
+      "name": "Gallop Northwestward",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases Morale for you and Electro teammates within range."
+    }
+  ]
 }

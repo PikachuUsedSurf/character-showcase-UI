@@ -2,11 +2,38 @@
   "name": "Lady Nifle",
   "role": "DPS",
   "tag": "Lumino",
+  "rarity": 5,
   "bio": "A ghostly matriarch who wields a life-draining scythe. A hybrid burst DPS, alternating between Solar Eclipse for Lumino damage and Lunar Hunt for Umbro damage, with wide-range skills that can narrow to a powerful single-target hit.",
-  "kitPending": true,
   "tiers": {
     "overall": "S"
   },
+  "skills": [
+    {
+      "name": "Solar Eclipse",
+      "type": "Active",
+      "desc": "Summons [Solar Eclipse] and replaces this skill with [Lunar Hunt]. [Solar Eclipse]: Deals Lumino Damage to all enemies within range when summoned and reduces their Attack."
+    },
+    {
+      "name": "Misty Sea Requiem",
+      "type": "Active",
+      "desc": "Enters [Funeral Rite] state. If Lady Nifle's Skill Range exceeds 100%, converts the excess portion into Skill Damage at a certain percentage, and the Skill Range will be reduced to and remain at 100% until the [Funeral Rite] state ends. While in [Funeral Rite] state: Increases Lady Nifle's Ranged Weapon Trigger Probability; Does not consume Sanity when summoning [Solar Eclipse] and increases the damage dealt by [Solar Eclipse]; Does not consume Sanity when summoning [Lunar Hunt] and pulls all targets on hit towards the center. The [Funeral Rite] state ends after a certain period of time or after summoning [Lunar Hunt] and [Solar Eclipse] 6 times."
+    },
+    {
+      "name": "Interwoven Cries",
+      "type": "Active",
+      "desc": "Based on Lady Nifle's Ranged Weapon Trigger Probability, there is a chance to summon 1 additional [Lunar Hunt] when summoning [Solar Eclipse] at the same location, and vice versa. The additional summoned [Solar Eclipse] and [Lunar Hunt] will not be enhanced by [Misty Sea Requiem]."
+    },
+    {
+      "name": "Nightfall",
+      "type": "Active",
+      "desc": "[Solar Eclipse] can trigger \"Bonus Effects: Lumino,\" while [Lunar Hunt] can trigger \"Bonus Effects: Umbro.\""
+    },
+    {
+      "name": "Crimson Radiance",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Lumino teammate(s)."
+    }
+  ],
   "stats": [
     {
       "label": "Signature Weapon",

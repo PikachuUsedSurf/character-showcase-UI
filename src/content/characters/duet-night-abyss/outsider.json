@@ -2,9 +2,36 @@
   "name": "Outsider",
   "role": "DPS",
   "tag": "Anemo",
+  "rarity": 4,
   "bio": "A piscator who fights with dual blades and dual pistols. His Stealth state enables tactical repositioning and spawns Fang Spikes that strike nearby enemies on entry and exit — a durable frontline brawler.",
-  "kitPending": true,
   "tiers": {
     "overall": "B"
-  }
+  },
+  "skills": [
+    {
+      "name": "Shadow Veil",
+      "type": "Active",
+      "desc": "Enters [Stealth] status and exits [Hunt]. Spawns 2 [Fang Spikes] to attack random enemies within range when exiting [Stealth] status."
+    },
+    {
+      "name": "Hunter's Strike",
+      "type": "Active",
+      "desc": "Retracts all [Fang Spikes] and enters [Hunt] status. Retracting each [Fang Spike] costs HP (minimum 1) to create an equal Ultra Shield and extend [Hunt] duration."
+    },
+    {
+      "name": "Fang for a Fang",
+      "type": "Active",
+      "desc": "Damage taken spawns and fires 1 [Fang Spike] at the attacker (once every second max)."
+    },
+    {
+      "name": "Ravenous Gnaw",
+      "type": "Active",
+      "desc": "When not in [Hunt] status, Melee Weapons have a chance to spawn and fire 1 [Fang Spike] on hit at your target (once every second max)."
+    },
+    {
+      "name": "Air Dominance",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and nearby Anemo teammates."
+    }
+  ]
 }

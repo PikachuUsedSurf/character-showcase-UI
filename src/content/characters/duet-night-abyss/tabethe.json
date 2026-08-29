@@ -2,9 +2,36 @@
   "name": "Tabethe",
   "role": "Support",
   "tag": "Hydro",
+  "rarity": 4,
   "bio": "Fights with a sword and bow in a supporting role.",
-  "kitPending": true,
   "tiers": {
     "mystic-maze": "S"
-  }
+  },
+  "skills": [
+    {
+      "name": "Tabethe's Specialty!",
+      "type": "Active",
+      "desc": "Commands all [Summon: Tentacles] to attack 1 time and increases the Damage Dealt from this attack. Grants Hydro Damage Bonus to you and teammates within range."
+    },
+    {
+      "name": "Brawl For Justice!",
+      "type": "Active",
+      "desc": "Summons 9 [Summon: Tentacles] around Tabethe."
+    },
+    {
+      "name": "Have Tricks, Will Travel!",
+      "type": "Active",
+      "desc": "Dealing CRIT Damage with a ranged weapon has a chance to summon 1 [Summon: Tentacle] near the target, which can only be triggered once per second. A maximum of 18 [Summon: Tentacles] can exist at the same time."
+    },
+    {
+      "name": "Tentacles Abound!",
+      "type": "Active",
+      "desc": "When summoning [Summon: Tentacles], Tabethe gains 1 stack that increases her CRIT Chance, up to 10 stacks."
+    },
+    {
+      "name": "Edge",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases Skill DMG for the character and their nearby teammate(s)."
+    }
+  ]
 }

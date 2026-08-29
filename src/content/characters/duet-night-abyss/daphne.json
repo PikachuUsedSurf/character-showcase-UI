@@ -2,9 +2,36 @@
   "name": "Daphne",
   "role": "Support",
   "tag": "Anemo",
+  "rarity": 4,
   "bio": "Wields a whipsword alongside an assault weapon, providing crowd control and healing for the team.",
-  "kitPending": true,
   "tiers": {
     "overall": "A"
-  }
+  },
+  "skills": [
+    {
+      "name": "Emerald Effusion",
+      "type": "Active",
+      "desc": "Daphne enters the [Emerald Effusion] state, during which an alchemical mist permeates the area around Daphne, continuously healing Daphne and the teammate(s) within range and decreasing the Movement Speed of the enemies in the mist. During [Emerald Effusion] state, Daphne gains 2 [Azoth Projectiles] per second."
+    },
+    {
+      "name": "Repulsion Synthesis",
+      "type": "Active",
+      "desc": "Heals and applies [Purification Formula] to Daphne and the nearby teammate(s). Temporarily immobilises and inflicts 1 stack of [Decay Formula] on enemies around, up to 3 stacks. Daphne gains [Azoth Projectiles] equal to the total number of affected teammates and enemies, up to 12 projectiles."
+    },
+    {
+      "name": "Azoth Projectile",
+      "type": "Active",
+      "desc": "Increases Daphne's ranged weapon Trigger Probability when she possesses [Azoth Projectile]. Daphne can hold up to 30 [Azoth Projectiles], and each ranged weapon attack consumes 1 [Azoth Projectile]."
+    },
+    {
+      "name": "Argent Lacrima",
+      "type": "Active",
+      "desc": "When Daphne possesses [Azoth Projectile] and her ranged weapon attack deals damage, target hit by the ranged weapon attack incurs the DoT of [Decay Formula] multiplied by Daphne's ranged weapon Trigger Probability."
+    },
+    {
+      "name": "Ardent Impulse",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases CRIT Chance for the character and their nearby teammate(s)"
+    }
+  ]
 }

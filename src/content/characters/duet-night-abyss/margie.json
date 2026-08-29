@@ -2,9 +2,36 @@
   "name": "Margie",
   "role": "DPS",
   "tag": "Pyro",
+  "rarity": 4,
   "bio": "Fights with a polearm and shotgun, focused on skill damage and crowd control.",
-  "kitPending": true,
   "tiers": {
     "overall": "B"
-  }
+  },
+  "skills": [
+    {
+      "name": "Margie's Treasure Shovel",
+      "type": "Active",
+      "desc": "Attack enemies in front, dealing Pyro Damage and stunning them. When using this skill by long press, Margie makes a continuous attack."
+    },
+    {
+      "name": "Margie's Combustible Bin",
+      "type": "Active",
+      "desc": "Casts 3 [Margie's Combustible Bins] forward. They immediately explode upon hitting any target, dealing AoE Pyro Damage and consuming a certain stacks of [Jackpot!] for enhancement: When consuming 3 stacks of [Jackpot!]: Increases the explosion range and damage. When consuming 6 stacks of [Jackpot!]: Creates a Zealous Zone after the explosion, dealing Pyro Damage once every 2s to enemies within the zone. When consuming 9 stacks of [Jackpot!]: Deals additional AoE Pyro Damage 2 times after the explosion."
+    },
+    {
+      "name": "Margie's Recycling Sack",
+      "type": "Active",
+      "desc": "When Margie or her nearby teammate(s) pick up any loot, Margie gains 1 stack of [Jackpot!] that lasts throughout the battle. Each stack increases Margie's Skill Damage, up to 20 stacks."
+    },
+    {
+      "name": "Margie's Pep Song",
+      "type": "Active",
+      "desc": "Increases the ATK of nearby teammate(s)."
+    },
+    {
+      "name": "Strike",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby teammate(s)."
+    }
+  ]
 }

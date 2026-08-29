@@ -2,12 +2,39 @@
   "name": "Fushu",
   "role": "Support",
   "tag": "Hydro",
+  "rarity": 5,
   "bio": "An extremely well-rounded support who grants Skill DMG to allies alongside healing, Sanity restoration, and Skill/ATK Speed buffs. Fights with whipsword and bow, and is one of the few characters able to deliver a large, instant Skill DMG buff with no ramp-up.",
   "tiers": {
     "overall": "S+",
     "mystic-maze": "S"
   },
-  "kitPending": true,
+  "skills": [
+    {
+      "name": "Subcelestial Solace",
+      "type": "Active",
+      "desc": "Summons 1 [Summon: Yunchi]. A maximum of 2 [Summon: Yunchi] can exist at the same time."
+    },
+    {
+      "name": "Holistic Harmony",
+      "type": "Active",
+      "desc": "Deals Hydro Damage to nearby enemies. Grants Fushu an Ultra Shield and increases her ATK Speed. In addition, Fushu's nearby teammates also receive an Ultra Shield and gain [Nine-Needle Therapy]."
+    },
+    {
+      "name": "Archaeus Revival",
+      "type": "Active",
+      "desc": "Using a Combat Sill or Ultimate Skill (either it's Fushu or her nearby teammates) gains 1 stack that increases Skill Speed, up to 10 stacks. The remaining time of the effect is refreshed with each new stack gained."
+    },
+    {
+      "name": "Brimful of Vitality",
+      "type": "Active",
+      "desc": "Increases Skill Damage based on the number of [Summon: Yunchi] on the field."
+    },
+    {
+      "name": "Meridian Synergy",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases Skill DMG for the character and their nearby teammate(s) when 2 or more characters in the team share the same element type."
+    }
+  ],
   "stats": [
     {
       "label": "Signature Weapon",

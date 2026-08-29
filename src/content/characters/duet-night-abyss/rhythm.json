@@ -2,9 +2,36 @@
   "name": "Rhythm",
   "role": "DPS",
   "tag": "Electro",
+  "rarity": 4,
   "bio": "An operative who fights with katana and rifle, built around fast gap-closers and a resource loop that converts Sanity into Electric Energy and back. Known for excellent mob-clearing.",
-  "kitPending": true,
   "tiers": {
     "overall": "S"
-  }
+  },
+  "skills": [
+    {
+      "name": "Volt Rush",
+      "type": "Active",
+      "desc": "Leaps forward, dealing Electro Damage to enemies along the path. When the [Electric Energy] point is no less than 30, consumes 30 points to increase the leap speed, the skill damage, and Rhythm's Damage Dealt by certain percentage."
+    },
+    {
+      "name": "Electro Vortex",
+      "type": "Active",
+      "desc": "Deals Electro Damage to enemies within range and enters [Electro Surge] state, during which it continuously consumes Sanity. [Electro Surge] state ends when Sanity reaches 0 or when the skill is used again."
+    },
+    {
+      "name": "Tactical Preservation",
+      "type": "Active",
+      "desc": "When consuming Sanity, converts a percentage of consumed Sanity into [Electric Energy]. The upper limit of [Electric Energy] is equal to the max Sanity."
+    },
+    {
+      "name": "Poweroff Anxiety",
+      "type": "Active",
+      "desc": "When consuming [Electric Energy], converts 50% of the consumed [Electric Energy] into [Sanity]."
+    },
+    {
+      "name": "Thundering Nightbreaker",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Electro teammate(s)."
+    }
+  ]
 }

@@ -2,8 +2,35 @@
   "name": "Kezhou",
   "role": "DPS",
   "tag": "Lumino",
+  "rarity": 5,
   "bio": "A weapon-damage DPS proficient with every weapon type, letting his ultimate assimilate the stats of whatever gear is equipped into a spectral arsenal. Constantly shifts between ranged and melee bursts across a Battery Phase and Discharge Phase for high mobility.",
-  "kitPending": true,
+  "skills": [
+    {
+      "name": "Drift of Youth",
+      "type": "Active",
+      "desc": "Deals Lumino Damage to enemies within range 3 times and increases Kezhou's Ranged Weapon Attack Speed. While in [Aspect Manifestation] state, increases Kezhou's Melee Weapon Attack Speed, during which Kezhou is immune to Hitstun when taking damage."
+    },
+    {
+      "name": "Lightswords Slice Starry Streams",
+      "type": "Active",
+      "desc": "Enters [Aspect Manifestation] state and summons [Edges of All Times] to rain from the sky, dealing Lumino Damage to enemies within range. While in [Aspect Manifestation] state, Kezhou's Melee Weapon becomes [Phanosword]. When triggering Bonus Effect using [Phanosword], generates 1 [Phanoplume]. While in [Aspect Manifestation] state, this skill is replaced with [Feathers Chase Dust In Dreams]. [Lightswords Slice Starry Streams] consumes less Sanity based on Kezhou's [Sword Intent] points. At max [Sword Intent] points, the Sanity Cost of [Lightswords Slice Starry Streams] is further reduced by an additional 20 points. [Feathers Chase Dust In Dreams] consumes less Sanity based on Kezhou's [String Intent]. At max [String Intent] points, the Sanity Cost of [Feathers Chase Dust In Dreams] is further reduced by an additional 20 points."
+    },
+    {
+      "name": "Life Drifts, Tides Rearrange",
+      "type": "Active",
+      "desc": "Initially possesses 50 points each of [Sword Intent] and [String Intent], both up to 100 points. Increases Melee Weapon Damage and Melee Weapon Trigger Probability by a certain percentage of Kezhou's [Sword Intent] points. Increases Ranged Weapon Damage and Ranged Weapon Trigger Probability by a certain percentage of Kezhou's [String Intent] points. Every time Kezhou deals damage using a ranged weapon, 1 [String Intent] point is converted into 1 [Sword Intent] point. Every time Kezhou deals damage using a melee weapon, 1 [Sword Intent] point is converted into 1 [String Intent] point."
+    },
+    {
+      "name": "Yet the Drifter Marks the Change",
+      "type": "Active",
+      "desc": "Upon entering [Aspect Manifestation] state, records the current [Sword Intent] points. For a period of time, if the [Sword Intent] point drops below this value, the [Sword Intent] effect applied to [Life's A Fleeting, Shifting Tide] will adopt the recorded value instead. Upon ending [Aspect Manifestation] state, records the current [String Intent] points. For a period of time, if the [String Intent] point drops below this value, the [String Intent] effect applied to [Life's A Fleeting, Shifting Tide] will adopt the recorded value instead."
+    },
+    {
+      "name": "Crimson Radiance",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Lumino teammate(s)."
+    }
+  ],
   "stats": [
     {
       "label": "Signature Weapon",

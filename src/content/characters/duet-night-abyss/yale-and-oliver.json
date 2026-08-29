@@ -2,6 +2,33 @@
   "name": "Yale and Oliver",
   "role": "DPS",
   "tag": "Pyro",
+  "rarity": 4,
   "bio": "A toy-shop owner and the talking Tot-Popper bomb that holds Oliver's soul. Fights with sword and shotgun — Yale wears down enemy Stance while Oliver maximizes burst damage.",
-  "kitPending": true
+  "skills": [
+    {
+      "name": "Tot Popper",
+      "type": "Active",
+      "desc": "Drops a bomb named [Tot Popper], assuming the form of either [Tot Popper: Yale's Make] or [Tot Popper: Oliver's Make]. Upon landing, the bomb explodes after 2s, dealing Pyro Damage to enemies within a cross-shaped area and detonating any other [Tot Poppers] within range. A maximum of 10 [Tot Poppers] can exist at the same time."
+    },
+    {
+      "name": "Nightmare's Grasp",
+      "type": "Active",
+      "desc": "Generates [Nightmare Lab] around Yale and Oliver. Using the skill again can close [Nightmare Lab] in advance."
+    },
+    {
+      "name": "The Rules of Bomb",
+      "type": "Active",
+      "desc": "When a [Tot Popper] is deployed, if it's no less than 2 metres above the ground, it deals Pyro Damage to nearby enemies upon landing."
+    },
+    {
+      "name": "Bombing Memories",
+      "type": "Active",
+      "desc": "Each time a [Tot Popper] is deployed, gains 1 stack of [Bombing Frenzy], up to 3 stacks. [Bombing Frenzy]: Increases Skill Efficiency."
+    },
+    {
+      "name": "Aetherflame",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Pyro teammate(s)."
+    }
+  ]
 }
