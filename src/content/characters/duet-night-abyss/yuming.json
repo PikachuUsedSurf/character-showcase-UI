@@ -1,0 +1,10 @@
+{
+  "name": "Yuming",
+  "role": "DPS",
+  "tag": "Electro",
+  "bio": "Wields polearm and assault rifle, empowering his Plunge Attack for huge single hits. Doubles as a top-tier enabler and sub-DPS, buffing the team and dealing heavy off-field damage — his ultimate summons the dragon Xuanjiao and grants hit-stun immunity.",
+  "tiers": {
+    "overall": "S"
+  },
+  "kitPending": true
+}

@@ -3,6 +3,8 @@
   "role": "DPS",
   "tag": "Anemo",
   "bio": "A piscator who fights with dual blades and dual pistols. His Stealth state enables tactical repositioning and spawns Fang Spikes that strike nearby enemies on entry and exit — a durable frontline brawler.",
-  "tier": "B",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "B"
+  }
 }

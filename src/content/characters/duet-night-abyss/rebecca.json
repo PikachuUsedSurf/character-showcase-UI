@@ -3,6 +3,8 @@
   "role": "DPS",
   "tag": "Hydro",
   "bio": "A summoner-type damage dealer who fights indirectly through Aurelia Auritas, wielding a polearm and grenade launcher. Can field multiple summons at once, each inheriting her own stats.",
-  "tier": "S",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "S"
+  }
 }

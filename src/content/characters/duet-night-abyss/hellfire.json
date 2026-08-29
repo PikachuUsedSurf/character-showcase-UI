@@ -3,6 +3,8 @@
   "role": "Tank",
   "tag": "Pyro",
   "bio": "The Warden of the Inferno and director of the Royal Military Prison. Taunts enemies into attacking her and deals damage that scales off her own Max HP — a self-sustaining frontline.",
-  "tier": "B",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "B"
+  }
 }

@@ -17,20 +17,27 @@ if (!game) throw new Error(`Unknown game: ${gameId}`);
 
 const allCharacters = await getCollection("characters");
 const roster = allCharacters.filter((c) => c.id.startsWith(`${gameId}/`));
-const ranked = roster.filter((c) => c.data.tier);
 
-const tiers = [
+const modes = game.data.tierModes && game.data.tierModes.length > 0 ? game.data.tierModes : [{ slug: "overall", name: "Overall" }];
+const showTabs = modes.length > 1;
+
+const tierDefs = [
   { value: "S+", css: "splus" },
   { value: "S", css: "s" },
   { value: "A", css: "a" },
   { value: "B", css: "b" },
   { value: "C", css: "c" },
 ] as const;
-const bands = tiers.map(({ value, css }) => ({
-  tier: value,
-  css,
-  units: ranked.filter((c) => c.data.tier === value),
-}));
+
+const panels = modes.map((mode, i) => {
+  const ranked = roster.filter((c) => c.data.tiers?.[mode.slug]);
+  const bands = tierDefs.map(({ value, css }) => ({
+    tier: value,
+    css,
+    units: ranked.filter((c) => c.data.tiers?.[mode.slug] === value),
+  }));
+  return { mode, ranked, bands, active: i === 0 };
+});
 ---
 
 <BaseLayout title={`${game.data.name} Tier List`} description={`Ranked ${game.data.name} roster.`} accent={game.data.accent}>
@@ -43,25 +50,48 @@ const bands = tiers.map(({ value, css }) => ({
       </div>
     </div>
 
-    {ranked.length > 0 ? (
-      <div class="tierlist">
-        {bands.map(({ tier, css, units }) => units.length > 0 && (
-          <div class={`tier-row t-${css}`}>
-            <div class="tier-label">{tier}</div>
-            <div class="tier-units">
-              {units.map((c) => (
-                <a class="tier-chip" href={`/${gameId}/characters/${c.id.split("/")[1]}`}>
-                  {c.data.sprite && <span class="dot" style={`background-image:url(/images/${gameId}/${c.data.sprite})`} />}
-                  {c.data.name}
-                </a>
-              ))}
-            </div>
-          </div>
+    {showTabs && (
+      <div class="mode-tabs" data-tier-tabs>
+        {panels.map(({ mode, active }) => (
+          <button class="mode-tab" class:list={[{ active }]} data-tier-tab={mode.slug}>{mode.name}</button>
         ))}
       </div>
-    ) : (
-      <div class="empty">
-        <p>No characters have been ranked for {game.data.name} yet. Tier placements only get published once they're backed by real testing — check back once the roster has more coverage.</p>
+    )}
+
+    {panels.map(({ mode, ranked, bands, active }) => (
+      <div class="tier-panel" class:list={[{ active }]} data-tier-panel={mode.slug}>
+        {ranked.length > 0 ? (
+          <div class="tierlist">
+            {bands.map(({ tier, css, units }) => units.length > 0 && (
+              <div class={`tier-row t-${css}`}>
+                <div class="tier-label">{tier}</div>
+                <div class="tier-units">
+                  {units.map((c) => (
+                    <a class="tier-chip" href={`/${gameId}/characters/${c.id.split("/")[1]}`}>
+                      {c.data.sprite && <span class="dot" style={`background-image:url(/images/${gameId}/${c.data.sprite})`} />}
+                      {c.data.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div class="empty">
+            <p>No characters have been ranked for {mode.name} yet. Tier placements only get published once they're backed by real testing — check back once there's coverage.</p>
+          </div>
+        )}
+      </div>
+    ))}
+
+    {game.data.tierNotes && game.data.tierNotes.length > 0 && (
+      <div class="notes">
+        {game.data.tierNotes.map((note) => (
+          <div class="note">
+            <h3>{note.title}</h3>
+            <p>{note.body}</p>
+          </div>
+        ))}
       </div>
     )}
   </div>
@@ -93,13 +123,49 @@ const bands = tiers.map(({ value, css }) => ({
     text-transform: uppercase;
   }
 
+  .mode-tabs {
+    display: flex;
+    gap: 2px;
+    margin: 28px 0 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mode-tab {
+    font: 600 11px var(--f-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 10px 18px;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: none;
+  }
+
+  .mode-tab.active {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .mode-tab:hover:not(.active) {
+    color: var(--ink);
+  }
+
+  .tier-panel {
+    display: none;
+  }
+
+  .tier-panel.active {
+    display: block;
+  }
+
   .tierlist {
     display: flex;
     flex-direction: column;
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
-    margin: 32px 0 70px;
+    margin: 32px 0;
   }
 
   .tier-row {
@@ -112,7 +178,7 @@ const bands = tiers.map(({ value, css }) => ({
     flex: none;
     display: grid;
     place-items: center;
-    font: 700 22px var(--f-display);
+    font: 700 20px var(--f-display);
     border-right: 1px solid var(--line);
     color: var(--void);
   }
@@ -171,4 +237,48 @@ const bands = tiers.map(({ value, css }) => ({
     color: var(--muted);
     max-width: 60ch;
   }
+
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 8px 0 70px;
+  }
+
+  .note {
+    background: var(--panel);
+    padding: 16px 18px;
+  }
+
+  .note h3 {
+    font: 600 11px var(--f-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+
+  .note p {
+    font: 400 12.5px/1.65 var(--f-body);
+    color: var(--muted);
+    margin: 0;
+    max-width: 68ch;
+  }
 </style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-tier-tabs]").forEach((tabs) => {
+    tabs.querySelectorAll<HTMLButtonElement>(".mode-tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const slug = tab.dataset.tierTab;
+        tabs.querySelectorAll(".mode-tab").forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        document.querySelectorAll<HTMLElement>("[data-tier-panel]").forEach((panel) => {
+          panel.classList.toggle("active", panel.dataset.tierPanel === slug);
+        });
+      });
+    });
+  });
+</script>

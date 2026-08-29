@@ -3,6 +3,8 @@
   "role": "DPS",
   "tag": "Electro",
   "bio": "A ranged summoner who deploys a Chaotic Thunderorb alongside damage fields, and can strike the orb directly to redirect damage into every enemy linked to it — built for clearing groups rather than single targets.",
-  "tier": "A",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "A"
+  }
 }

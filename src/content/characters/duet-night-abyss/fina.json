@@ -1,0 +1,11 @@
+{
+  "name": "Fina",
+  "role": "Support",
+  "tag": "Lumino",
+  "bio": "A young spellcaster who manipulates light and ice, built around one idea: keep the buffs running and make everyone's weapon attacks hit harder. One of the game's best offensive supports, with book-based attacks that grant consistent crowd control.",
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  },
+  "kitPending": true
+}

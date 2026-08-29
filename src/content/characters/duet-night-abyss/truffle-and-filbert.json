@@ -3,5 +3,8 @@
   "role": "Support",
   "tag": "Anemo",
   "bio": "A devout duo embodying innocence and faith, wielding holy energy through a polearm and bow — light projectiles paired with healing bursts.",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "mystic-maze": "S"
+  }
 }

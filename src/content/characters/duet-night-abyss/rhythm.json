@@ -3,6 +3,8 @@
   "role": "DPS",
   "tag": "Electro",
   "bio": "An operative who fights with katana and rifle, built around fast gap-closers and a resource loop that converts Sanity into Electric Energy and back. Known for excellent mob-clearing.",
-  "tier": "S",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "S"
+  }
 }

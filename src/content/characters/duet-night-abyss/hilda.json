@@ -3,6 +3,8 @@
   "role": "DPS",
   "tag": "Pyro",
   "bio": "A skill-damage-oriented fighter with dual blades and grenade launcher, summoning spinning Dirtexpeller turrets that fire laser beams around her.",
-  "tier": "A",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "A"
+  }
 }

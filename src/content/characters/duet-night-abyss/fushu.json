@@ -1,0 +1,11 @@
+{
+  "name": "Fushu",
+  "role": "Support",
+  "tag": "Hydro",
+  "bio": "An extremely well-rounded support who grants Skill DMG to allies alongside healing, Sanity restoration, and Skill/ATK Speed buffs. Fights with whipsword and bow, and is one of the few characters able to deliver a large, instant Skill DMG buff with no ramp-up.",
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  },
+  "kitPending": true
+}

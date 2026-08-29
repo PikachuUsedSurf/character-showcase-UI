@@ -3,6 +3,9 @@
   "role": "DPS",
   "tag": "Anemo",
   "bio": "Fights with a polearm-scythe and assault rifle, and can take to the air. Her passive, Amberlight, stacks buffs on critical hits — built for heavy single-target damage.",
-  "tier": "S+",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  }
 }

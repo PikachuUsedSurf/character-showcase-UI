@@ -3,6 +3,9 @@
   "role": "DPS",
   "tag": "Electro",
   "bio": "A skill-damage-oriented fighter wielding a greatsword and dual pistols. Her signature gimmick is an ultimate that can take three different forms.",
-  "tier": "S+",
-  "kitPending": true
+  "kitPending": true,
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  }
 }
