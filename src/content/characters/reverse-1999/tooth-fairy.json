@@ -1,0 +1,8 @@
+{
+  "name": "Tooth Fairy",
+  "role": "Healer",
+  "tag": "Star",
+  "rarity": 6,
+  "bio": "A healer, debuffer, and purifier — keeps the team topped up while stripping buffs and status effects from enemies.",
+  "kitPending": true
+}

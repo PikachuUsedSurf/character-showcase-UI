@@ -14,7 +14,8 @@ interface Skill {
 
 interface Props {
   name: string;
-  role: string;
+  role?: string;
+  tag?: string;
   affiliation?: string;
   unitNo?: string;
   rarity?: number;
@@ -24,7 +25,7 @@ interface Props {
   skills?: Skill[];
 }
 
-const { name, role, affiliation, unitNo, rarity, bio, portrait, stats, skills } = Astro.props;
+const { name, role, tag, affiliation, unitNo, rarity, bio, portrait, stats, skills } = Astro.props;
 
 const iconFor: Record<string, string> = {
   "EX Skill": "/images/skill-icons/ex-skill.png",
@@ -53,7 +54,13 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
           </div>
         )}
         <h1 class="dossier-name">{name}</h1>
-        <div class="dossier-role">{role}</div>
+        {(role || tag) && (
+          <div class="dossier-role">
+            {role}
+            {role && tag && " · "}
+            {tag}
+          </div>
+        )}
       </div>
       {rarity && (
         <div class="dossier-rarity">

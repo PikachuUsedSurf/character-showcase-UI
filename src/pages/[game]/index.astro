@@ -19,7 +19,7 @@ const roster = allCharacters
   .filter((c) => c.id.startsWith(`${game.id}/`))
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-const roles = Array.from(new Set(roster.map((c) => c.data.role))).sort();
+const roles = Array.from(new Set(roster.map((c) => c.data.role ?? c.data.tag).filter((r): r is string => !!r))).sort();
 ---
 
 <BaseLayout title={`${game.data.name} Roster`} description={game.data.description} accent={game.data.accent}>

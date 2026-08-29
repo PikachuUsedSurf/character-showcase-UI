@@ -32,7 +32,7 @@ const characters = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/characters" }),
   schema: z.object({
     name: z.string(),
-    role: z.string(),
+    role: z.string().optional(),
     tag: z.string().optional(),
     affiliation: z.string().optional(),
     unitNo: z.string().optional(),

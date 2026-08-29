@@ -2,7 +2,7 @@
 interface Props {
   href: string;
   name: string;
-  role: string;
+  role?: string;
   tag?: string;
   unitNo?: string;
   rarity?: number;
@@ -11,9 +11,11 @@ interface Props {
 }
 
 const { href, name, role, tag, unitNo, rarity, sprite, kitPending } = Astro.props;
+const primaryTag = role ?? tag;
+const secondaryTag = role ? tag : undefined;
 ---
 
-<a class="unit" href={href} data-role={role}>
+<a class="unit" href={href} data-role={primaryTag ?? ""}>
   <div class="unit-media" class:list={[{ live: !!sprite }]} style={sprite ? `background-image:url(${sprite})` : undefined}>
     {!sprite && <span class="glyph">{name.charAt(0)}</span>}
     {unitNo && <span class="unit-id">NO. {unitNo}</span>}
@@ -26,8 +28,8 @@ const { href, name, role, tag, unitNo, rarity, sprite, kitPending } = Astro.prop
   <div class="unit-body">
     <div class="unit-name">{name}</div>
     <div class="unit-tags">
-      <span class="unit-tag path">{role}</span>
-      {tag && <span class="unit-tag">{tag}</span>}
+      {primaryTag && <span class="unit-tag path">{primaryTag}</span>}
+      {secondaryTag && <span class="unit-tag">{secondaryTag}</span>}
     </div>
     {kitPending && <div class="unit-note">kit data — pending</div>}
   </div>

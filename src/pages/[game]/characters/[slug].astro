@@ -19,11 +19,12 @@ const { character, gameId } = Astro.props;
 const game = await getEntry("games", gameId);
 if (!game) throw new Error(`Unknown game: ${gameId}`);
 
-const { name, role, affiliation, unitNo, rarity, bio, portrait, sprite, stats, skills, kitPending } = character.data;
+const { name, role, tag, affiliation, unitNo, rarity, bio, portrait, sprite, stats, skills, kitPending } = character.data;
 const portraitUrl = portrait ? `/images/${gameId}/${portrait}` : sprite ? `/images/${gameId}/${sprite}` : undefined;
+const subtitle = [role, tag].filter(Boolean).join(" · ");
 ---
 
-<BaseLayout title={name} description={bio ?? `${name} — ${role}, ${game.data.name}`} accent={game.data.accent}>
+<BaseLayout title={name} description={bio ?? `${name}${subtitle ? ` — ${subtitle}` : ""}, ${game.data.name}`} accent={game.data.accent}>
   <Nav game={{ slug: gameId, name: game.data.name }} active="roster" />
   <div class="wrap">
     <p class="crumbline"><a href={`/${gameId}`}>← Back to roster</a></p>
@@ -35,6 +36,7 @@ const portraitUrl = portrait ? `/images/${gameId}/${portrait}` : sprite ? `/imag
     <Dossier
       name={name}
       role={role}
+      tag={tag}
       affiliation={affiliation}
       unitNo={unitNo}
       rarity={rarity}
