@@ -38,7 +38,11 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
 
 <div class="dossier">
   <div class="dossier-media">
-    {portrait && <div class="portrait" style={`background-image:url(${portrait})`}><span class="corner-tag">FIG. 01 — FIELD PORTRAIT</span></div>}
+    {portrait ? (
+      <div class="portrait" style={`background-image:url(${portrait})`}><span class="corner-tag">FIG. 01 — FIELD PORTRAIT</span></div>
+    ) : (
+      <div class="portrait placeholder"><span class="glyph">{name.charAt(0)}</span><span class="corner-tag">FIG. 01 — AWAITING UPLOAD</span></div>
+    )}
   </div>
   <div class="dossier-main">
     <div class="dossier-toprow">
@@ -152,6 +156,21 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, transparent 60%, rgb(5 9 11 / 85%));
+  }
+
+  .portrait.placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--panel-2);
+  }
+
+  .portrait.placeholder::after {
+    background: none;
+  }
+
+  .portrait .glyph {
+    font: 700 64px var(--f-display);
+    color: var(--dim);
   }
 
   .corner-tag {
