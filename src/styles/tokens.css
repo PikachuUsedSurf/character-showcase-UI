@@ -1,0 +1,31 @@
+/*
+  Tactical HUD design tokens.
+  --accent is the one value a game overrides (see GameLayout.astro).
+  Everything else — ground, panels, type — stays shared across every title
+  so the whole network reads as one system.
+*/
+:root {
+  --void: #05090b;
+  --panel: #0d151a;
+  --panel-2: #121c22;
+  --panel-3: #17242b;
+
+  --line: rgb(94 231 255 / 16%);
+  --line-strong: rgb(94 231 255 / 32%);
+
+  --ink: #d9edf3;
+  --ink-hi: #f2fbff;
+  --muted: #5f7c86;
+  --dim: #3a4e56;
+
+  --accent: #5ee7ff;
+  --accent-dim: rgb(94 231 255 / 12%);
+
+  --amber: #ffb648;
+  --green: #6bffa0;
+  --red: #ff6464;
+
+  --f-display: "Chakra Petch", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, monospace;
+  --f-body: "Overpass", system-ui, sans-serif;
+}

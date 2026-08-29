@@ -1,0 +1,166 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Nav from "../../components/Nav.astro";
+
+export async function getStaticPaths() {
+  const games = await getCollection("games");
+  return games.map((game) => ({
+    params: { game: game.id },
+    props: { gameId: game.id },
+  }));
+}
+
+const { gameId } = Astro.props;
+const game = await getEntry("games", gameId);
+if (!game) throw new Error(`Unknown game: ${gameId}`);
+
+const allCharacters = await getCollection("characters");
+const roster = allCharacters.filter((c) => c.id.startsWith(`${gameId}/`));
+const ranked = roster.filter((c) => c.data.tier);
+
+const tiers = ["S", "A", "B", "C"] as const;
+const bands = tiers.map((tier) => ({
+  tier,
+  units: ranked.filter((c) => c.data.tier === tier),
+}));
+---
+
+<BaseLayout title={`${game.data.name} Tier List`} description={`Ranked ${game.data.name} roster.`} accent={game.data.accent}>
+  <Nav game={{ slug: gameId, name: game.data.name }} active="tier-list" />
+  <div class="wrap">
+    <div class="pageh">
+      <div>
+        <p class="eyebrow">Deployment — {game.data.name}</p>
+        <h1>Tier List</h1>
+      </div>
+    </div>
+
+    {ranked.length > 0 ? (
+      <div class="tierlist">
+        {bands.map(({ tier, units }) => units.length > 0 && (
+          <div class={`tier-row t-${tier.toLowerCase()}`}>
+            <div class="tier-label">{tier}</div>
+            <div class="tier-units">
+              {units.map((c) => (
+                <a class="tier-chip" href={`/${gameId}/characters/${c.id.split("/")[1]}`}>
+                  {c.data.sprite && <span class="dot" style={`background-image:url(/images/${gameId}/${c.data.sprite})`} />}
+                  {c.data.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="empty">
+        <p>No characters have been ranked for {game.data.name} yet. Tier placements only get published once they're backed by real testing — check back once the roster has more coverage.</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .pageh {
+    padding: 44px 0 32px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .pageh .eyebrow {
+    font: 600 10.5px/1 var(--f-mono);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .pageh h1 {
+    font: 700 clamp(28px, 4vw, 40px)/1.05 var(--f-display);
+    color: var(--ink-hi);
+    text-transform: uppercase;
+  }
+
+  .tierlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 32px 0 70px;
+  }
+
+  .tier-row {
+    display: flex;
+    background: var(--panel);
+  }
+
+  .tier-label {
+    width: 64px;
+    flex: none;
+    display: grid;
+    place-items: center;
+    font: 700 22px var(--f-display);
+    border-right: 1px solid var(--line);
+    color: var(--void);
+  }
+
+  .t-s .tier-label {
+    background: var(--amber);
+  }
+
+  .t-a .tier-label {
+    background: var(--accent);
+  }
+
+  .t-b .tier-label,
+  .t-c .tier-label {
+    background: var(--dim);
+    color: var(--ink);
+  }
+
+  .tier-units {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .tier-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    padding: 6px 10px 6px 6px;
+    font: 500 11px var(--f-mono);
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .tier-chip:hover {
+    border-color: var(--line-strong);
+  }
+
+  .tier-chip .dot {
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    background-position: top;
+    background-color: var(--panel-3);
+    flex: none;
+  }
+
+  .empty {
+    padding: 60px 0;
+    font: 400 13px/1.6 var(--f-body);
+    color: var(--muted);
+    max-width: 60ch;
+  }
+</style>

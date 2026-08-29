@@ -1,0 +1,144 @@
+---
+interface Props {
+  href: string;
+  name: string;
+  role: string;
+  tag?: string;
+  unitNo?: string;
+  rarity?: number;
+  sprite?: string;
+  kitPending?: boolean;
+}
+
+const { href, name, role, tag, unitNo, rarity, sprite, kitPending } = Astro.props;
+---
+
+<a class="unit" href={href} data-role={role}>
+  <div class="unit-media" class:list={[{ live: !!sprite }]} style={sprite ? `background-image:url(${sprite})` : undefined}>
+    {!sprite && <span class="glyph">{name.charAt(0)}</span>}
+    {unitNo && <span class="unit-id">NO. {unitNo}</span>}
+    {rarity && (
+      <div class="unit-rarity">
+        {Array.from({ length: rarity }).map(() => <i />)}
+      </div>
+    )}
+  </div>
+  <div class="unit-body">
+    <div class="unit-name">{name}</div>
+    <div class="unit-tags">
+      <span class="unit-tag path">{role}</span>
+      {tag && <span class="unit-tag">{tag}</span>}
+    </div>
+    {kitPending && <div class="unit-note">kit data — pending</div>}
+  </div>
+</a>
+
+<style>
+  .unit {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease;
+  }
+
+  .unit:hover {
+    border-color: var(--line-strong);
+  }
+
+  .unit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--dim);
+  }
+
+  .unit:has(.unit-media.live)::before {
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+  }
+
+  .unit-media {
+    height: 120px;
+    background: var(--panel-2);
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .glyph {
+    font: 700 32px var(--f-display);
+    color: var(--dim);
+  }
+
+  .unit-id {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font: 500 9px var(--f-mono);
+    color: var(--muted);
+    background: rgb(5 9 11 / 70%);
+    padding: 2px 5px;
+  }
+
+  .unit-rarity {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 2px;
+  }
+
+  .unit-rarity i {
+    width: 6px;
+    height: 6px;
+    background: var(--amber);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+
+  .unit-body {
+    padding: 12px 13px 14px;
+  }
+
+  .unit-name {
+    font: 600 14.5px var(--f-display);
+    color: var(--ink-hi);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .unit-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .unit-tag {
+    font: 500 9px var(--f-mono);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+
+  .unit-tag.path {
+    color: var(--accent);
+    border-color: var(--line-strong);
+  }
+
+  .unit-note {
+    font: 400 9.5px var(--f-mono);
+    color: var(--dim);
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+  }
+</style>

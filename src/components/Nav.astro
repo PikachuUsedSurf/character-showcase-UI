@@ -1,0 +1,144 @@
+---
+interface Props {
+  game?: { slug: string; name: string };
+  active?: "roster" | "tier-list" | "guides";
+}
+
+const { game, active } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="topbar-inner">
+    {
+      game ? (
+        <div class="crumb">
+          <a href="/">ARCHIVE NETWORK</a>
+          <span class="sep">/</span>
+          <b>{game.name}</b>
+        </div>
+      ) : (
+        <div class="brand">
+          <span class="mark"><i /></span> ARCHIVE NETWORK
+        </div>
+      )
+    }
+    <div class="navspacer"></div>
+    {
+      game && (
+        <nav class="navlinks">
+          <a href={`/${game.slug}`} class={active === "roster" ? "active" : ""}>Roster</a>
+          <a href={`/${game.slug}/tier-list`} class={active === "tier-list" ? "active" : ""}>Tier List</a>
+          <a href="#" aria-disabled="true">Guides</a>
+        </nav>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgb(5 9 11 / 88%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topbar-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    height: 54px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font: 700 14px var(--f-display);
+    letter-spacing: 0.05em;
+    color: var(--ink-hi);
+    text-transform: uppercase;
+  }
+
+  .mark {
+    width: 19px;
+    height: 19px;
+    border: 1.5px solid var(--accent);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    display: grid;
+    place-items: center;
+  }
+
+  .mark i {
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    box-shadow: 0 0 6px var(--accent);
+  }
+
+  .crumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font: 600 12px var(--f-display);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .crumb a {
+    color: var(--dim);
+    text-decoration: none;
+  }
+
+  .crumb a:hover {
+    color: var(--muted);
+  }
+
+  .crumb .sep {
+    color: var(--dim);
+  }
+
+  .crumb b {
+    color: var(--ink-hi);
+    font-weight: 700;
+  }
+
+  .navspacer {
+    flex: 1;
+  }
+
+  .navlinks {
+    display: flex;
+    gap: 2px;
+    font: 600 11px var(--f-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .navlinks a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+  }
+
+  .navlinks a.active {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .navlinks a:hover:not(.active) {
+    color: var(--ink);
+  }
+
+  @media (max-width: 760px) {
+    .navlinks {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,185 @@
+---
+interface Props {
+  slug: string;
+  name: string;
+  accent: string;
+  status: "live" | "development" | "planned";
+  description: string;
+  characterCount: number;
+  glyph: string;
+  heroImage?: string;
+}
+
+const { slug, name, accent, status, description, characterCount, glyph, heroImage } = Astro.props;
+
+const statusLabel = {
+  live: "Live",
+  development: "In development",
+  planned: "Planned",
+}[status];
+
+const isLive = status === "live";
+---
+
+<a class="game" class:list={[{ live: isLive }]} style={`--accent:${accent}`} href={isLive ? `/${slug}` : undefined} aria-disabled={!isLive}>
+  <div class="game-top">
+    <span class="game-id">DEP. {String(characterCount ? 1 : 0).padStart(2, "0")}</span>
+    <span class="game-status">{statusLabel}</span>
+  </div>
+  <div class="game-media">
+    {heroImage && <div class="hero-image" style={`background-image:url(${heroImage})`} />}
+    {!heroImage && <span class="glyph">{glyph}</span>}
+    <div class="scan"></div>
+  </div>
+  <div class="game-body">
+    <div class="game-name">{name}</div>
+    <p class="game-desc">{description}</p>
+    <div class="game-meta">
+      <span><b>{characterCount}</b> {characterCount === 1 ? "unit" : "units"} archived</span>
+      <span class="game-cta">{isLive ? "Enter →" : "Notify me"}</span>
+    </div>
+  </div>
+</a>
+
+<style>
+  .game {
+    position: relative;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .game.live:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .game:not(.live) {
+    cursor: default;
+    opacity: 0.88;
+  }
+
+  .game::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .game-top {
+    padding: 18px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .game-id {
+    font: 500 9.5px var(--f-mono);
+    color: var(--dim);
+    letter-spacing: 0.08em;
+  }
+
+  .game-status {
+    font: 700 9px var(--f-mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  .game:not(.live) .game-status {
+    color: var(--dim);
+    border-color: var(--line-strong);
+  }
+
+  .game-media {
+    height: 132px;
+    margin: 14px 20px 0;
+    background: var(--panel-2);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    background-size: auto 150%;
+    background-position: center top;
+  }
+
+  .game-media .scan {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(transparent 0 3px, rgb(0 0 0 / 15%) 3px 4px);
+  }
+
+  .glyph {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font: 700 34px var(--f-display);
+    color: var(--dim);
+    letter-spacing: 0.04em;
+  }
+
+  .game-body {
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .game-name {
+    font: 700 20px var(--f-display);
+    text-transform: uppercase;
+    color: var(--ink-hi);
+    line-height: 1.1;
+  }
+
+  .game-desc {
+    font: 400 11.5px/1.6 var(--f-body);
+    color: var(--muted);
+    flex: 1;
+    margin: 0;
+  }
+
+  .game-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 500 10px var(--f-mono);
+    color: var(--dim);
+    letter-spacing: 0.03em;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+  }
+
+  .game-meta b {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .game-cta {
+    color: var(--accent);
+    font: 600 10.5px var(--f-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .game.live:hover .game-cta {
+    text-decoration: underline;
+  }
+</style>

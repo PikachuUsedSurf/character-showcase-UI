@@ -1,0 +1,61 @@
+---
+interface Props {
+  roles: string[];
+}
+
+const { roles } = Astro.props;
+---
+
+<div class="filterbar" data-filterbar>
+  <button class="chip-toggle on" data-role="all">All</button>
+  {roles.map((role) => (
+    <button class="chip-toggle" data-role={role}>{role}</button>
+  ))}
+</div>
+
+<style>
+  .filterbar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .chip-toggle {
+    font: 600 10.5px var(--f-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 7px 13px;
+    cursor: pointer;
+  }
+
+  .chip-toggle.on {
+    color: var(--void);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .chip-toggle:hover:not(.on) {
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-filterbar]").forEach((bar) => {
+    bar.querySelectorAll<HTMLButtonElement>(".chip-toggle").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        bar.querySelectorAll(".chip-toggle").forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+
+        const role = btn.dataset.role;
+        document.querySelectorAll<HTMLElement>(".roster .unit").forEach((card) => {
+          const show = role === "all" || card.dataset.role === role;
+          card.style.display = show ? "" : "none";
+        });
+      });
+    });
+  });
+</script>

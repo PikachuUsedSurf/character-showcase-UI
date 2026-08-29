@@ -1,0 +1,352 @@
+---
+interface Stat {
+  label: string;
+  value: string;
+}
+
+interface Skill {
+  name: string;
+  jp?: string;
+  type?: string;
+  desc: string;
+  value?: string;
+}
+
+interface Props {
+  name: string;
+  role: string;
+  affiliation?: string;
+  unitNo?: string;
+  rarity?: number;
+  bio?: string;
+  portrait?: string;
+  stats?: Stat[];
+  skills?: Skill[];
+}
+
+const { name, role, affiliation, unitNo, rarity, bio, portrait, stats, skills } = Astro.props;
+
+const iconFor: Record<string, string> = {
+  "EX Skill": "/images/skill-icons/ex-skill.png",
+  Passive: "/images/skill-icons/passive-skill.png",
+  Sub: "/images/skill-icons/sub-skill.png",
+  Normal: "/images/skill-icons/normal-skill.png",
+};
+
+const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boolean))) as string[] : [];
+---
+
+<div class="dossier">
+  <div class="dossier-media">
+    {portrait && <div class="portrait" style={`background-image:url(${portrait})`}><span class="corner-tag">FIG. 01 — FIELD PORTRAIT</span></div>}
+  </div>
+  <div class="dossier-main">
+    <div class="dossier-toprow">
+      <div>
+        {(unitNo || affiliation) && (
+          <div class="dossier-id">
+            {unitNo && `UNIT NO. ${unitNo}`}{unitNo && affiliation && " — "}{affiliation}
+          </div>
+        )}
+        <h1 class="dossier-name">{name}</h1>
+        <div class="dossier-role">{role}</div>
+      </div>
+      {rarity && (
+        <div class="dossier-rarity">
+          {Array.from({ length: rarity }).map(() => <i />)}
+        </div>
+      )}
+    </div>
+
+    {stats && stats.length > 0 && (
+      <div class="stat-grid">
+        {stats.map((s) => (
+          <div class="stat">
+            <span>{s.label}</span>
+            <b>{s.value}</b>
+          </div>
+        ))}
+      </div>
+    )}
+
+    {bio && <p class="dossier-bio">{bio}</p>}
+
+    {skills && skills.length > 0 && (
+      <div data-skilltabs>
+        <div class="tabs">
+          <button class="tab active" data-tab="all">All Skills</button>
+          {types.map((t) => (
+            <button class="tab" data-tab={t}>{t}</button>
+          ))}
+        </div>
+
+        <div class="skill-panel active" data-panel="all">
+          {skills.map((s) => (
+            <div class="skill-row">
+              {s.type && iconFor[s.type] && <img class="skill-icon" src={iconFor[s.type]} alt="" />}
+              <div class="skill-text">
+                <div class="skill-name">{s.name}</div>
+                {s.jp && <div class="skill-jp">{s.jp}{s.type && ` — ${s.type}`}</div>}
+                <div class="skill-desc">{s.desc}</div>
+              </div>
+              {s.value && <div class="skill-val">{s.value}</div>}
+            </div>
+          ))}
+        </div>
+
+        {types.map((t) => (
+          <div class="skill-panel" data-panel={t}>
+            {skills.filter((s) => s.type === t).map((s) => (
+              <div class="skill-row">
+                {s.type && iconFor[s.type] && <img class="skill-icon" src={iconFor[s.type]} alt="" />}
+                <div class="skill-text">
+                  <div class="skill-name">{s.name}</div>
+                  {s.jp && <div class="skill-jp">{s.jp}</div>}
+                  <div class="skill-desc">{s.desc}</div>
+                </div>
+                {s.value && <div class="skill-val">{s.value}</div>}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</div>
+
+<style>
+  .dossier {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    border: 1px solid var(--line);
+    background: var(--panel);
+  }
+
+  @media (max-width: 780px) {
+    .dossier {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .dossier-media {
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border-right: 1px solid var(--line);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 320px;
+  }
+
+  .portrait {
+    flex: 1;
+    background-size: cover;
+    background-position: top center;
+    border: 1px solid var(--line);
+    min-height: 280px;
+    position: relative;
+  }
+
+  .portrait::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgb(5 9 11 / 85%));
+  }
+
+  .corner-tag {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    font: 500 9.5px var(--f-mono);
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    z-index: 2;
+  }
+
+  .dossier-main {
+    padding: 26px 28px;
+  }
+
+  .dossier-toprow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .dossier-id {
+    font: 500 10.5px var(--f-mono);
+    color: var(--dim);
+    letter-spacing: 0.08em;
+  }
+
+  .dossier-name {
+    font: 700 30px var(--f-display);
+    color: var(--ink-hi);
+    text-transform: uppercase;
+    margin: 6px 0 4px;
+  }
+
+  .dossier-role {
+    font: 600 11.5px var(--f-mono);
+    color: var(--amber);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .dossier-rarity {
+    display: flex;
+    gap: 3px;
+  }
+
+  .dossier-rarity i {
+    width: 9px;
+    height: 9px;
+    background: var(--amber);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 22px 0;
+  }
+
+  @media (max-width: 520px) {
+    .stat-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .stat {
+    background: var(--panel-2);
+    padding: 12px 12px 10px;
+  }
+
+  .stat span {
+    display: block;
+    font: 500 9px var(--f-mono);
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .stat b {
+    font: 700 19px var(--f-mono);
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dossier-bio {
+    font: 400 13px/1.75 var(--f-body);
+    color: var(--ink);
+    max-width: 60ch;
+    margin: 0 0 26px;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 2px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 16px;
+  }
+
+  .tab {
+    font: 600 10.5px var(--f-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 9px 16px;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: none;
+  }
+
+  .tab.active {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .tab:hover:not(.active) {
+    color: var(--ink);
+  }
+
+  .skill-panel {
+    display: none;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .skill-panel.active {
+    display: flex;
+  }
+
+  .skill-row {
+    background: var(--panel-2);
+    padding: 13px 15px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .skill-icon {
+    width: 28px;
+    height: 28px;
+    flex: none;
+    margin-top: 2px;
+  }
+
+  .skill-text {
+    flex: 1;
+  }
+
+  .skill-name {
+    font: 600 13px var(--f-display);
+    color: var(--ink-hi);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .skill-jp {
+    font: 400 10.5px var(--f-mono);
+    color: var(--dim);
+    margin-bottom: 6px;
+  }
+
+  .skill-desc {
+    font: 400 11.5px/1.6 var(--f-body);
+    color: var(--muted);
+    max-width: 46ch;
+  }
+
+  .skill-val {
+    font: 700 15px var(--f-mono);
+    color: var(--green);
+    white-space: nowrap;
+    text-align: right;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-skilltabs]").forEach((wrap) => {
+    wrap.querySelectorAll<HTMLButtonElement>(".tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const name = tab.dataset.tab;
+        wrap.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        wrap.querySelectorAll<HTMLElement>(".skill-panel").forEach((p) => {
+          p.classList.toggle("active", p.dataset.panel === name);
+        });
+      });
+    });
+  });
+</script>
