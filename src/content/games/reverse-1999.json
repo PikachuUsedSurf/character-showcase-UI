@@ -3,5 +3,19 @@
   "accent": "#d8a95c",
   "status": "development",
   "order": 3,
-  "description": "129 Arcanists tracked across all six Afflatus types — role and kit data filling in for the meta-relevant picks first."
+  "description": "129 Arcanists tracked across all six Afflatus types — 97 with real endgame performance ratings across every mode.",
+  "tierModes": [
+    { "slug": "overall", "name": "Overall" },
+    { "slug": "limbo", "name": "Limbo" },
+    { "slug": "lucidscape", "name": "Lucidscape" },
+    { "slug": "raid", "name": "Raid" },
+    { "slug": "roguelike", "name": "Roguelike" },
+    { "slug": "reveries", "name": "Reveries" }
+  ],
+  "tierNotes": [
+    {
+      "title": "Source & methodology",
+      "body": "Ratings come from the community Character Tier List (CN 3.9 / Global 3.7 data), converted from that sheet's 0–10 performance scores using its own published bands: 8+ is S+, 7+ is S, 6+ is A, 5+ is B, under 5 is C. \"Overall\" uses each Arcanist's Final Score (Base Score weighted by Team Multiplier). 32 newer or less-discussed Arcanists aren't in that tier list yet and stay unranked rather than guessed at."
+    }
+  ]
 }

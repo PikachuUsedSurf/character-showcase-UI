@@ -2,5 +2,20 @@
   "name": "Blonney",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST DPT, AoE DPT, Crit-Based. ⌽ Skill 1 has innately-increased Crit Rate/DMG; additonal buffs locked behind Ult. ⌽ Skill 2 can inflict [Confusion]. ⌽ Both skills have relatively high ST damage mods. ⌽ Can help generate crits for herself with semi-consistent ST [Confusion]. ⌽ Synergy: Crit-oriented units and Crit-buffers (Lorelei, Mercuria, Argus, etc.)",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

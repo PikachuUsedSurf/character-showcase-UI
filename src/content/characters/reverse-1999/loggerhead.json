@@ -2,5 +2,20 @@
   "name": "Loggerhead",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: Debuff, Healing. ⌽ Has multiple ways to randomly apply [Neg Stats] (such as [Poison], [Burn] and [Petrify]). ⌽ S2 applies [Memory Replay] on some allies (number of allies affected increases with rank). When attacked while under this status, reduce damage taken and inflict random [Neg Stats] on the attacker. ⌽ Heals all allies with [Memory Replay] at turn end. ⌽ Heal rate increases for two turns when allies apply [Neg Stats] on enemies via skills or [Memory Replay]. ⌽ S1 and Ult deal damage and inflict several random [Neg Stats] on enemies.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

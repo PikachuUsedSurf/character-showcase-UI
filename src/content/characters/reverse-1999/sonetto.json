@@ -3,6 +3,19 @@
   "role": "Support",
   "tag": "Mineral",
   "rarity": 5,
-  "bio": "Chief Assistant to Timekeeper Vertin. A Mineral Arcanist whose Mystery deals Reality damage and applies Disarm, functioning as a support-leaning damage dealer.",
-  "kitPending": true
+  "bio": "Archetype: DMG Buff, Crowd-Control. ⌽ Can apply consistent +DMG Dealt and -DMG Taken (and extra Penetration Rate for herself) with S2. ⌽ The [Disarm] on S1 makes opponents with a lot of damage easy to handle. ⌽ Using her own buffs, her Ult can hit extremely hard even in late game. ⌽ Flexible (and free!) unit that can find herself in a lot of different teams.",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

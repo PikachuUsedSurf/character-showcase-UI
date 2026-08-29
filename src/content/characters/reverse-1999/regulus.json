@@ -1,8 +1,21 @@
 {
   "name": "Regulus",
-  "role": "DPS",
+  "role": "Support",
   "tag": "Star",
   "rarity": 6,
-  "bio": "Vertin's first companion in the main story, a pirate who specializes in dealing Mental damage.",
-  "kitPending": true
+  "bio": "Archetype: Dodge, Crit-Rate Dependent, AP-Generous. ⌽ Great defensive Ult that applies [Riot and Roll] to all allies, allowing them to dodge to all non-Ult attacks for 1 turn. ⌽ Can skip a turn to gain [Restless Heart]. Casting a skill consumes [Restless Heart] to gain increased Crit Rate, converts excess Crit Rate into Crit DMG and gain 1 additional Moxie. ⌽ S2 reduces enemy Moxie on Crit. ⌽ Powerful but with few early-game use cases. ⌽ Synergy: Crit-oriented units. (Lilya, Voyager, Tooth Fairy, etc.)",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

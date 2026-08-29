@@ -2,5 +2,20 @@
   "name": "Horropedia",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Dispel, ST DPT. ⌽ Strong ST attacks when the enemy does not have buffs. ⌽ Skill 1 can ST dispel. ⌽ Higher-tier Skills are more effective. ⌽ Ult does decent AoE damage and increases Mental DMG Taken on enemies. ⌽ Works best on stages without buffed enemies. ⌽ Synergy: [Rank Up] teammates (Mercuria, Vila, etc.)",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

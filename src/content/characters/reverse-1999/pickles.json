@@ -2,5 +2,20 @@
   "name": "Pickles",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "B"
+  },
+  "bio": "Archetype: Dispeller, DMG Buff, AP-Generous. ⌽ Not acting grants [Clarified Topic] self-buff ⌽ Skills consume [Clarified Topic] to enhance effects ⌽ Ultimate consumes [Clarified Topic] to provide team DMG Bonus. ⌽ [Clarified Topic] consumption grants +1 Moxie to self. ⌽ Skill 2 can semi-consistently AoE Dispel.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

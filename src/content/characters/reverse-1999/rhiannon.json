@@ -2,5 +2,20 @@
   "name": "Rhiannon",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Always Effective, Extra Round, AP Free, Skill Enhancement. ⌽ [All-Rounder] makes self count as every archetype tag. ⌽ Casts and enters an extra turn at turn start when at sufficient [Raptor Kinship] energy. ⌽ Deploys [Rapport] at turn start, increasing team afflatus advantage multiplier. ⌽ Charges [Raptor Kinship], and gains [Rapport] and 1 moxie at turn end. ⌽ Ultimate makes own incantations enter [Bendith] form and not consume AP, and increases allies' ATK/Max HP based on Rhiannon's ATK/Max HP. ⌽ S1 decreases all enemies' Crit DEF based on [Rapport] stacks when in [Bendith] form. ⌽ S2 increases Ult Might, Incantation Might, and Max HP on self, and increases team DMG Bonus based on [Rapport] when in [Bendith] form.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

@@ -3,6 +3,19 @@
   "role": "Support",
   "tag": "Spirit",
   "rarity": 6,
-  "bio": "A Spirit-Afflatus sub-DPS who inflicts Burn while supporting the team — one of the game's stronger DEF-shredding debuffers.",
-  "kitPending": true
+  "bio": "Archetype: Phase Build-Up, AFK Buff, Extra Action. ⌽ Grants [Preignition] to all allies, allowing them to inflict [Burn] on attack. ⌽ Changes phase based on the total number of [Burn] stacks resolved. Becomes stronger with each phase change. ⌽ Final phase: Automatically applies [Power Burst] to all allies and casts [Intermezzo] against [Burn]ed enemies every turn. ⌽ S2 reduces enemy Crit DEF and Reality DEF. ⌽ Ultimate grants all allies [Rousing Morale], inflicts burn on all enemies and casts [Intermezzo]. Excess [Burn] inflicted on the main target is instead converted into Incantation Might for this [Intermezzo].",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "B",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

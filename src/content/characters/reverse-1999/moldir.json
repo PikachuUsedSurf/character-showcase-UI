@@ -2,5 +2,20 @@
   "name": "Moldir",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Ultimate Support, Moxie Generation, Riposte, +AP. ⌽ Gains [Readiness] after allies consume Moxie and gives an effect based on its count. Gains Moxie after riposte. ⌽ Tier 1: Gain [Assertiveness], which changes S2's \"riposte with S1\" to \"riposte with Ult\". ⌽ Tier 2: Additionally, allies gain Ult DMG Bonus. ⌽ Tier 3: Additionally, allies gain Crit Rate and allied Ults gain Crit Rate to Crit DMG convert. ⌽ S1 inflicts [Passion Drain] and grants +1 AP next turn. ⌽ Ult deals damage to all enemies and gives Ult Crit DMG buff to all allies. Actively casting Ult deals more damage, Casting Riposte ult further increases Ult Crit DMG given to all allies and enters [Dogma], giving Ultimate Might and preventing moldir from gaining [Assertiveness] for 2 rounds.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

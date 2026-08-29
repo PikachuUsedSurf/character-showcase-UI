@@ -1,8 +1,21 @@
 {
   "name": "Enigma",
-  "role": "Support",
+  "role": "Healer",
   "tag": "Intellect",
   "rarity": 6,
-  "bio": "A brilliant strategist and Intellect Arcanist. Deploys a Bastion that negates damage and grants control immunity, dispels team-wide afflictions via her Cipher Machine, and converts decoded Ciphertext into damage buffs.",
-  "kitPending": true
+  "bio": "Archetype: Dynamo, Bastion, Control Immunity. ⌽ Deploys [Pulsing Field] at turn start if it isn't already active. Injects 10 [Dynamo] into [Pulsing Field] at turn end. ⌽ Stacks [Loop Chain] for every ally active action / hit taken / turn end. When able, consume 5 stacks and grant 1 Moxie, [Dynamo], [Bastion] to self and 5 [Ciphertext] to all allies. ⌽ [Ciphertext] is consumed when injecting [Dynamo] to make [Pulsing Field] gain extra [Dynamo]. Cap of 6/7/10 for 1/2/3+ [Dynamo] allies. ⌽ [Bastion] cannot coexist with [Shield]. Damage dealt to allies hits [Bastion] instead, and allies take less damage and gain Control immunity. ⌽ Ally [Dynamo] cap increased by 20 and gain damage buffs for every [Dynamo] under lv.3 [Pulsing Field]. ⌽ Ultimate does not count towards draw limit, cleanses all negative effects from allies, grants Crit DMG and DMG Bonus.",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

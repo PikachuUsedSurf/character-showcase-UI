@@ -2,5 +2,20 @@
   "name": "Corvus",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Dynamo, ST DPT, Extra Action. ⌽ Deploys [Pulsing Field] at turn start if it isn't already active. Gains [Dynamo] for every actively-cast skill. ⌽ Skill 2 inflicts [Welding] on a single enemy and makes self enter [Stitching]. The enemy with [Welding] will generate [Electric Arc] for Corvus on hit; more on Mental DMG hit. ⌽ Skills inflict [Breaking Point] on enemies. At turn end, uses an Extra Action to attack the enemy with [Welding], dealing more damage based on [Pulsing Field] level, and consumes [Breaking Point] to deal even more damage based on [Electric Arc] and [Flickering Arc] stacks. Then, injects [Dynamo] into [Pulsing Field]. ⌽ Ultimate deals damage and procs one additional Extra Action. ⌽ Under Lv. 3 [Pulsing Field], has +5 Moxie limit and gains 3 Moxie. On expiry, converts [Electric Arc] into [Flickering Arc] and [Dynamo].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Necrologist",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Immortality, DMG Buff, AP Greedy. ⌽ Provides a powerful DMG Dealt bonus through her Ult which also applies [Prayer] on other allies, preventing them from dying when they are killed. [Prayer] cannot stack; additional applications become heals instead. ⌽ Has some niche ST [Stats Up] and [Status Pos] dispel on her S2. ⌽ Although she cannot gain [Prayer] or DMG Bonus from her Ult, she does gain [Prayer] at the start of battle and heals herself whenever ally [Prayer] is dispelled.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

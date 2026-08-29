@@ -2,5 +2,20 @@
   "name": "Tuesday",
   "tag": "Spirit",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Poison Core, Moxie Storage. ⌽ Allows all [Poison] to crit. ⌽ Allows all allies to store up to 5 excess Moxie. ⌽ Skills inflict multiple [Poison] stacks on several enemies, and lower their Crit Resistence. ⌽ Ult deals [Poison]-based Genesis damage and casts the Array [Horror Story Night]. ⌽ While her Array is active, prevents [Poison] stacks from decreasing and procs [Poison] one extra time at the start of the enemy's turn. On expiry, immediately procs all [Poison] on all enemies.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

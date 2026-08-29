@@ -3,6 +3,19 @@
   "role": "DPS",
   "tag": "Intellect",
   "rarity": 6,
-  "bio": "An Intellect Arcanist and top-tier damage dealer, built around Lingering Glow and Extra Action mechanics for sustained high output.",
-  "kitPending": true
+  "bio": "Archetype: Lingering Glow, Empower Incantation, Extra Action. ⌽ [Lingering Glow] stacks accumulate when [Burn] or [Halo] is inflicted, increasing team Crit Rate and enabling a FUA to be cast. ⌽ Gains a precast [Emanation] at each turn start based on the color of crystals chosen when entering battle. Gains Moxie at turn end if a certain amount of [Lingering Glow] is reached. ⌽ Blue: Extra Actions inflict [Halo]. [Emanation] increases FUA cast rate. All FUA gain a reuse chance. ⌽ Red: Active Actions inflict [Halo]. [Emanation] decreases [Lingering Glow] required for a FUA to be cast, and increases its Crit Rate scaling. ⌽ Green: High-tier skills inflict [Halo]. [Emanation] ranks up AP space. FUA is considered high-tier. ⌽ Ultimate redistributes [Halo] on enemies based on their HP. This is considered [Halo] re-infliction.",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

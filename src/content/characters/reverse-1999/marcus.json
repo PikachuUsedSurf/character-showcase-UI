@@ -2,5 +2,20 @@
   "name": "Marcus",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "B",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "bio": "Archetype: High Tier Skills, Ultimate Cycle. ⌽ Inflicts and maintains [Annotate] on one enemy, prioritizing the boss. Gains [Eureka] each time that enemy moves and at each turn start. ⌽ Consumes [Eureka] to rank-up own skills at the start of each turn. Repeats until insufficient [Eureka] or no avaliable skills for rank up. ⌽ Ult deals more damage to the [Annotate]d enemy. Additionally grants [Eureka] and an extra pre-cast S1 next turn for immediate rank up. ⌽ When teamed up with at least 3 Plant/Spirit/Intellect units, gains additional Moxie when using 2/3 star skills.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Aleph",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Inspiration, Skill Reuse. ⌽ Consumes Eureka when allies act to allow Impromptu attacks to decrease enemy DMG Taken Reduction and Mental DEF. ⌽ Skills give extra AP and consume Eureka to apply team-wide Incantation Might. ⌽ Memorizes a few actively cast normal skills on the turn Ult is used and reuse them next turn. Reused skills retain their Inspiration. ⌽ Has a chance to recover Eureka when spending it. ⌽ Works very well with other Inspiration characters but not so much anywhere else.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

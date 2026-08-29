@@ -3,6 +3,19 @@
   "role": "Healer",
   "tag": "Star",
   "rarity": 6,
-  "bio": "A healer, debuffer, and purifier — keeps the team topped up while stripping buffs and status effects from enemies.",
-  "kitPending": true
+  "bio": "Archetype: AoE Healing, Cleanser, Crit Debuff. ⌽ Provides passive healing, Crit Rate and Crit DMG debuffs for free by consuming [Baby Tooth]. ⌽ P2 allows near-permanent uptime on debuffs. ⌽ S1 can apply [Confusion] at Rank 1 (Most skills that apply [Confusion] only do so at Rank 2/3). ⌽ Heal on S2 and Ultimate have increased Crit Rate (Yes, Heals can Crit). ⌽ Ult deals ST Mental damage and cleanses all allies on Crit.",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "B",
+    "raid": "A",
+    "roguelike": "B",
+    "reveries": "A"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

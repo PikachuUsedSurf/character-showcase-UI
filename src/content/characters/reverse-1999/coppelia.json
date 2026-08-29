@@ -2,5 +2,20 @@
   "name": "Coppélia",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Conduit, Mineral Energy. ⌽ Does not obtain normal incantations, rather charges [Conduit]s with [Energy] to release incantations, Moxie is replaced with Harmonization. ⌽ When entering battle, increases all allies' Conduit might and increase self Harmonization. ⌽ Every time an ally triggers an [Conduit], gains 1 stack of [Scale Steps], which increases Ult might. ⌽ S1 is standard with DMG increasing based on [Conduit Energy Consumption] and S2 buff both Crit stats. ⌽ Ult consumes all [Interval Step] to increase the level of [Conduit Energy Consumption] and gives 3 stacks of [Conduit Tuning I] to self and the ally directly behind, then flux to S1.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

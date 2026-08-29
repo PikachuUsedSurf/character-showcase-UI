@@ -2,5 +2,20 @@
   "name": "Lorelei",
   "tag": "Star",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "B"
+  },
+  "bio": "Archetype: Deck-Based Buff, Ultimate Enhance. ⌽ Passively grants team buffs depending on the most common skill type in your hand. ⌽ S1 deals mass Mental damage and applies [Weakness]. ⌽ S2 increases ally DMG Taken Reduction and Crit DMG. ⌽ Ult gains additional power for each skill remaining in-hand and gains 1 Moxie on crit. ⌽ Great AFK buffer with occasionally very strong Ults.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

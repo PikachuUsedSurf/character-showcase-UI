@@ -2,5 +2,20 @@
   "name": "Silverwing Eagle",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Debuff, Extra Action. ⌽ Does a FUA [Lorentz Tracking] on the main target everytime she actively attacks. ⌽ Increases the Ult might and Crit stats of a plant ally's attack based on the number of [Neg Status] (max 4). ⌽ S1 inflicts a debuff that deals damage proportional to 15% of self max HP. ⌽ S2 inflicts [Nasty Wound] to help stack more [Neg Status]s. ⌽ Ult deals more DMG based on [Neg Status] (max 4) and if the Ult breaks Affliatus Guard, follow-up with 1 [Lorentz Tracking].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

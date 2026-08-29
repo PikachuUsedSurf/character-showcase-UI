@@ -2,5 +2,20 @@
   "name": "Igor",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Ultimate Spam, Bullet, Family Guy. ⌽ Has max Moxie of 12. Does not gain Ultimate card; instead, consumes 8 Moxie to autocast it at turn end, attacking all enemies. ⌽ Skills and Ultimates inflict [Shrapnel] on hit. Ultimate consumes [Shrapnel] on enemies to deal extra damage. ⌽ Gains [Bullet]s from Skill 2. Based on [Bullet] type count on self, increases the Ultimate Might and primary target damage of the next Ultimate ⌽ Increases Lopera's Crit DMG and allows her Ultimate to distribute both bullet types to the whole team when on the same team as her. ⌽ When teamed with Moldir, both units gain Moxie storage, and Moldir's Ultimate inflicts [Shrapnel] and refunds some Moxie to both units.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

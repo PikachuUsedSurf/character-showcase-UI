@@ -1,8 +1,21 @@
 {
   "name": "Druvis III",
-  "role": "Support",
+  "role": "DPS",
   "tag": "Plant",
   "rarity": 6,
-  "bio": "A support and control unit dealing Mental damage, built around locking down enemies while contributing steady team utility.",
-  "kitPending": true
+  "bio": "Archetype: Crowd-Control, AoE DPT. ⌽ Revolves around inflicting [Petrify] with Skill 1 and Ultimate. ⌽ Insight 3 supports self and Plant allies with [Circle of Life] buff. ⌽ Excels against [Petrify]-able enemies, struggles otherwise.",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

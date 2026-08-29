@@ -2,5 +2,20 @@
   "name": "Kanjira",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST Debuff, Turn-Based. ⌽ Inflicts various debuffs based on present turn count. ⌽ Powerful skills when used on the right turns. ⌽ Semi-consistent (consistent at P1) 2 stacks of [Poison] to proc \"Blasphemer of Night\". ⌽ Synergy: Crit-oriented or [Poison] teammates (Jessica, Tuesday, Willow, etc.)",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

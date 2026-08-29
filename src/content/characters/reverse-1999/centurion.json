@@ -2,5 +2,20 @@
   "name": "Centurion",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "C",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: AoE DPT, ST DPT, Self-Sustain. ⌽ Insight 1 grants DMG Bonus and Skill 1 deals additional damage based on current moxie. ⌽ Higher Moxie ➤ Higher damage; can forgo Ultimate for high ST damage. ⌽ High self-sustain with Insight 3 healing and [Weakness]; can forgo ST damage to spam Ultimate. ⌽ Consistent damage and utility at early, mid, and late game. ⌽ A relic of launch day meta.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

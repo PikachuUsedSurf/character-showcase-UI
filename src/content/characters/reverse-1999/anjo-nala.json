@@ -2,5 +2,20 @@
   "name": "Anjo Nala",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S",
+    "roguelike": "S+",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Binding, Ultimate Cycle, Extra Action, Crowd-Control. ⌽ Has Moxie consumption of 8 and limit of 12. ⌽ Beginning of stage: Chooses one ally to designate as \"the Bound\". All Moxie the Bound gains is transferred to Anjo Nala. ⌽ Ult causes both to Channel, releasing both Ults consecutively the following turn at the cost of 50% of the Bound's current HP. ⌽ Additional effects triggered based on the afflatus of the Bound: ⌽ Beast/Plant: Gains Moxie when the Bound consumes AP. ⌽ Star/Mineral: AoE extra action when the Bound consumes AP. ⌽ Spirit/Intellect: S1 extra action used against lowest HP enemy when the Bound consumes AP. This decreases S2 countdown.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

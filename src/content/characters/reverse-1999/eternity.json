@@ -2,5 +2,20 @@
   "name": "Eternity",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE DPT, ST DPT, Self-Sustain. ⌽ [Blood of Longevity], [Blood of Immortality] and Ultimate healing makes her extremely hard to kill. ⌽ Immune to several annoying statuses like [Poison], [Corrode], [Bleed], and all [Stats Down] at Insight 3. ⌽ Can (slowly) solo most early- to mid-game content. ⌽ Harsh drop-off in late-game.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

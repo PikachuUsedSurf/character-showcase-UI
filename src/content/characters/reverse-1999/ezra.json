@@ -1,8 +1,21 @@
 {
   "name": "Ezra",
-  "role": "Support",
+  "role": "Healer",
   "tag": "Star",
   "rarity": 6,
-  "bio": "Ezra Theodore — a Star-Afflatus shielder who plants mushrooms that buff allies and debuff enemies, with two distinct Euphoria paths: one a Bloodtithe healer, the other a Dynamo shielder.",
-  "kitPending": true
+  "bio": "Archetype: Delayed Buff, Moxie/Eureka Generation. ⌽ Deals some Genesis DMG; effective against high-DEF enemies. ⌽ Plant mushrooms on skill use, granting buffs when fully grown (after 3 turns). ⌽ Using Ult accumulates [Eureka] and gives Moxie & [Eureka] to team. ⌽ Consumes [Eureka] to gain Moxie or speed up mushroom growth. ⌽ Synergy: AP-Generous and Crit-oriented units (Regulus, Tooth Fairy, etc.)",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

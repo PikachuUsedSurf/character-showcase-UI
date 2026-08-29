@@ -2,5 +2,20 @@
   "name": "Getian",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "C",
+    "raid": "B",
+    "roguelike": "C",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Reality Damage Bonus, Cycle-Based. ⌽ Inflicts [Shape of Bones] with S1 and Insight 3 passive. Enemies with [Shape of Bones] have reduced Reality DEF and take additional Genesis damage when attacked. ⌽ Gains [Eureka] with S2 and Ult. Consumes [Eureka] to attack all enemies with [Shape of Bones]. ⌽ Ultimate generates an Array that buffs DMG Bonus for all allies, Reality damage gains additional DMG Bonus. ⌽ Synergy: Reality Damagers (Jessica, Spathodea, etc.)",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

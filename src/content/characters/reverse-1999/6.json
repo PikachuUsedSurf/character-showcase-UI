@@ -2,5 +2,20 @@
   "name": "6",
   "tag": "Intellect",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "B",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Multi-use Buff/Debuff, Cleanse, Empower Incantation. ⌽ Inflicts numerous random buffs and debuffs. Improves team damage and survivability. ⌽ Insight 3 passively provides a random buff to all allies at the start of every turn. ⌽ Gains [Eureka] when an ally has 4+ buffs; works well with characters who can self-buff. ⌽ Skill 1 inflicts random debuffs and grants [Eureka] if holding 4 or less. ⌽ Skill 2 applies random buffs and cleanses a single ally. ⌽ Consumes [Eureka] to strengthen own Ultimate or grant [Empower Incantation I] through S2.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

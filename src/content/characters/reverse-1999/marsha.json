@@ -2,5 +2,20 @@
   "name": "Marsha",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Lingering Glow, Cleanse, Shield Extension. ⌽ Accumulates [Lingering Glow] stacks when [Burn] or [Halo] is inflicted. Gains bonus stacks based on the number of allies using [Lingering Glow]. Also buffs Crit DMG and increases maximum [Burn] stacks with three allies using [Lingering Glow]. ⌽ Cleanses [Control] from affected allies at turn start and grants other allies [Pardon], which nullifies the next [Control] inflicted on them. ⌽ Gains [Frontline Care] at turn start, which is consumed to cast Skill 2, generate Moxie and acquire [Pain's Response] when an ally is hit. ⌽ Skill 2 stacks shield on any existing ones and extends its duration. When actively cast, consumes [Frontline Care] to cleanse [Stats Down] and [Neg Status]. All allies start the battle with this shield. ⌽ Ultimate converts [Pain's Response] to [Discipline Forged], which buffs Crit, Incantation Might and Crit conversion for all allies.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

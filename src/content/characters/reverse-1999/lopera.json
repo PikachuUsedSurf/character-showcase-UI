@@ -2,5 +2,20 @@
   "name": "Lopera",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Bullet, Crit Conversion, Array. ⌽ On triggering a Bullet effect: Gains 1 Moxie and heals 50% lost HP for the ally with the lowest HP. ⌽ S2 grants [Flaming Bullet] to self. Does a FUA at turn end if there are remaining bullets on self. ⌽ Using S1 converts all bullets on self to bullets that boost Incantation/Ult Might, and distributes them to allies in front of/behind her respectively. ⌽ Array on Ult prevents bullet loss and grants +40% Crit Rate. Also allows allies to convert excess Crit Rate to Crit DMG at a bullet-determined efficiency.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

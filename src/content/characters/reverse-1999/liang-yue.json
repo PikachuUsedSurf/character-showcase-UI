@@ -2,5 +2,20 @@
   "name": "Liang Yue",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "S",
+    "raid": "S",
+    "roguelike": "S",
+    "reveries": "S"
+  },
+  "bio": "Archetype: Empower Incantation, Extra Action. ⌽ Ult gives team [Immunity] and applies [Guardian's Resolve], which decreases DMG Taken. Summons Qiangliang for a few turns. ⌽ If Qiangliang is present, some rightmost cards gain +1 Rank when used and grant [Justice Talon], and some leftmost cards gain +1 turn to some effects' duration and grant [Peace Talon]. ⌽ At enough [Talon]s, triggers an AoE FUA whose effects depend on the proportion of each [Talon]. ⌽ Skill 1 generates [Justice Talon] and increases the duration of [Guardian's Resolve]. ⌽ Skill 2 generates [Peace Talon] and applies [Guardian's Blessing] to one ally: When attacked, Liang casts her S1 against the attacker.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Difficult"
+    }
+  ]
 }

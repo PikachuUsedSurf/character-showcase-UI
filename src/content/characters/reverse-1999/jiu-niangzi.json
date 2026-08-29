@@ -2,5 +2,20 @@
   "name": "Jiu Niangzi",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "B",
+    "limbo": "A",
+    "lucidscape": "A",
+    "raid": "A",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "bio": "Archetype: ST DPT, Extra Action. ⌽ Accumulates [Liquor] based on the number of unique buffs held by all allies and by using S2. ⌽ While holding [Liquor], gains a random buff at the start of the round. ⌽ After attacking with S1, consumes a random amount of [Liquor] to cast a FUA based on the amount of [Liquor] consumed. ⌽ Ult deals additional damage the fewer targets there are; replenishes/consumes [Liquor] based on current stack. ⌽ When casting Ult while holding 6+ [Liquor], consume [Liquor] to gain additional Penetration Rate. ⌽ When casting Ult while holding less than 6 [Liquor], gain 6 stacks of [Liqour].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

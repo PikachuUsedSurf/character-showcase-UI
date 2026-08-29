@@ -2,5 +2,20 @@
   "name": "Medicine Pocket",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE Healing, DEF Buff. ⌽ S1 makes the target take more damage for one turn. ⌽ S2 heals the team and applies [Sturdiness] for extra DMG Reduction. ⌽ Ult inflicts ST [Daze] and refunds 1 Moxie.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

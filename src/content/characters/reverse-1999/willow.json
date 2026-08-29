@@ -2,5 +2,20 @@
   "name": "Willow",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "A",
+    "raid": "S",
+    "roguelike": "S",
+    "reveries": "S"
+  },
+  "bio": "Archetype: DoT, Poison Enhance. ⌽ Skills convert [Poison] into [Hag's Bane], a unique poison with increasing damage over time. ⌽ Inflicts [Poison] when allies actively attack. ⌽ Ultimate causes Channel status. When channeling, Moxie cap is raised and she gains additional Moxie for every move. At turn end, consumes increasing amounts Moxie to inflict [Hag's Bane] on all enemies based on Channel duration. On losing all Moxie, deals additional damage to all enemies based on their [Hag's Bane] count and exit the Channel state. ⌽ Requires Tuesday to function properly, loses two thirds of her damage potential without Tuesday.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Difficult"
+    }
+  ]
 }

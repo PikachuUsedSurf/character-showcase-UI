@@ -2,5 +2,20 @@
   "name": "Lilya",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: ST DPT, Crit-Rate Dependent. ⌽ Insight 3 doubles the Crit Rate given by the equipped Psychube (Only from Stats, not from Passives). ⌽ On Crit, her Ultimate gains Leech Rate and her S1 will cast a FUA. ⌽ Low performance when low crit rate.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

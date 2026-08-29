@@ -2,5 +2,20 @@
   "name": "Balloon Party",
   "tag": "Mineral",
   "rarity": 5,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "B"
+  },
+  "bio": "Archetype: AoE Healing, DEF Buff, Damage Reflect. ⌽ Applies [Balloon of Innocence] to team for DMG Reduction/Heal-on-hit ⌽ Applies [Party Balloon] for damage reflect. ⌽ Most damage comes from [Party Balloon]; relies partly on Ult for buffs. ⌽ Flexible defensive support; pairs well with Arcanists that have a lot of HP (Nautika, Semmelweis, etc.) ⌽ Minimal investment required to be effective. ⌽ Heals get stronger with lower HP, cannot heal to max HP.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

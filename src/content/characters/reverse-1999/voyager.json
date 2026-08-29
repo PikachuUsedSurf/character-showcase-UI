@@ -2,5 +2,20 @@
   "name": "Voyager",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: Crowd-Control, Crit-Rate Up, Damage Reflect, DEF Buff. ⌽ Can inflict strong debuffs; [Confusion], [Silence] and [Seal]. ⌽ S2 grants allies [Sturdiness] and [Interstellar Blessing], reducing DMG Taken and countering with Genesis damage when attacked. ⌽ Ultimate reduces enemy Moxie and deals additional damage against enemies with [Confusion].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

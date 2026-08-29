@@ -2,5 +2,20 @@
   "name": "Mercuria",
   "tag": "Spirit",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: AFK Buff, High Tier Skill Synergy. ⌽ Gains [Cosmic Energy] whenever she or an ally uses a skill. Higher tier skills grant more stacks. ⌽ [Cosmic Energy] buffs team's damage. 9+ stacks grant Crit DMG buff, 16+ grants Incantation Might. ⌽ If multiple high-tier skills are used in one turn, gains 1 additional Moxie. ⌽ Ultimate: Dispels enemy buffs and grants the whole team [Rank Up]. This effect does not increase the effect or multipliers, but it does affect insights that rely on higher tier card or effects such as Vila's enhanced buff.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

@@ -1,8 +1,21 @@
 {
   "name": "Flutterpage",
-  "role": "DPS",
+  "role": "Support",
   "tag": "Star",
   "rarity": 6,
-  "bio": "A Star-Afflatus Reality-damage Arcanist that blends DPS and Support functions through Extra Action turns.",
-  "kitPending": true
+  "bio": "Archetype: Extra Action, AFK AoE DPT, +AP. ⌽ Gains [Gust] after any action is taken and deploys a forcefield at turn start based on [Gust] count. ⌽ Tier 1: Allies' attacks deal additional Reality damage, more so if the attack consumed Eureka. ⌽ Tier 2: Additionally, extra actions deal increased damage and Genesis damage based on [Gust] count. ⌽ Tier 3: Additionally, extra actions guarantee crits and deal increased damage and Genesis damage based on ally Crit stats. ⌽ S2 gives +1 AP next turn. ⌽ Ultimate converts all skills in-hand to AoE incantations and cast them automatically as Extra Actions.",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

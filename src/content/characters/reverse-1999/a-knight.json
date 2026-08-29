@@ -2,5 +2,20 @@
   "name": "A Knight",
   "tag": "Spirit",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "A",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: AoE DPT, ST DPT, Snowball. ⌽ Insights provide DMG Bonus and Penetration Rate based on enemy missing HP. ⌽ Killing an enemy with Ultimate applies [Rousing Morale] to the team. ⌽ Skill 1 grants bonus Moxie on kill and Skill 2 grants bonus moxie at higher ranks, allowing faster Ult cycles. ⌽ Kill condition makes for an extremely greedy carry. ⌽ Excels in stages with multiple enemies or waves that allow better Ult cycling.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

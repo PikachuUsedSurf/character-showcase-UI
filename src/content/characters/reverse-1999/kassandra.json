@@ -2,5 +2,20 @@
   "name": "Kassandra",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Assassination, Gash, Extra Action, Ultimate. ⌽ Gains [Adrenaline] instead of Moxie. With enough [Adrenaline], generates a versatile attack card with special effects. ⌽ S2 inflicts [Lethal Injury], causing attacks to trigger [Assassination], or enhancing its effects if the attack is an [Assassination]. ⌽ Utilizes a skill tree mechanic for kit customization. ⌽ [Hunter] branch grants Crit Rate and Crit DMG to all allies, and improves [Lethal Injury] and [Assassination] capabilities. ⌽ [Warrior] branch grants DMG Bonus and Incantation Might to all allies, and improves extra action and [Gash] capabilities. ⌽ [Assassin] branch grants ATK and Pen. Rate to all allies, gain additional casts of [Rush Assassination], and improves [Adrenaline] gain. ⌽ Insight 3 grants [Guidance of Three Gods] whenever an ally triggers an [Assassination], enhancing the effects of the current forcefield.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

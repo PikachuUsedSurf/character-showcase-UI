@@ -2,5 +2,20 @@
   "name": "Rubuska",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Bloodtithe, AFK healing, ST buff. ⌽ Gains [Bloodtithe] when losing HP. All allies lose HP at turn start though [Shadow Field]. ⌽ Grants all allies [Shadow Cloak], which stacks based on self HP lost or skill usage and grants buffs based on its stacks. ⌽ Heals all allies after any of them take a hit. All heals cannot crit. ⌽ Ultimate concentrates accumulated buffs onto one ally for one (or two at P1) turns. ⌽ Prevents ally death (once per ally).",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

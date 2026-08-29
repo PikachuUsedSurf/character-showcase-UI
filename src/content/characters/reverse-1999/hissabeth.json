@@ -2,5 +2,20 @@
   "name": "Hissabeth",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "A",
+    "limbo": "S",
+    "lucidscape": "A",
+    "raid": "S+",
+    "roguelike": "S",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Ultimate Spam, Genesis damage, Petrify. ⌽ Starts the battle with a certain amount of [Snake's Den], which is converted into a versatile skill [Hiss!] at turn start or by using S2. Using S2 with insufficient [Snake's Den] gives Moxie instead. ⌽ [Hiss!] inflicts [Serpentile Scales] on the enemy, does not consume AP, and counts as an Ult. ⌽ Enemies with [SS] take Genesis damage at turn end, then [SS] stacks are converted back to [Snake's Den] stacks on self. ⌽ Inflicts [Rigidity] and gains Moxie when hitting an enemy with [SS]. ⌽ Ult increases the Genesis damage dealt by [SS], then reclaims all [SS] stacks from target at round end and transforms them into [Hiss!] incantations instead of [Snake's Den]. ⌽ Ult and [Hiss!] don't take up hand space.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

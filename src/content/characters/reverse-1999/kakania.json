@@ -2,5 +2,20 @@
   "name": "Kakania",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S",
+    "lucidscape": "S",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Damage Allocation, Tank, Assist Burst. ⌽ Takes 50% of damage dealt to allies from enemy attacks and stores damage taken as [Empathy]. ⌽ Heals the team when storing enough [Empathy] and deals AOE Genesis damage when receiving heals based on current [Empathy]. ⌽ S1 deals additional Genesis damage based on current [Empathy]. ⌽ S2 can self-heal based on max HP or grant one ally an ATK buff based on current [Empathy]. ⌽ Ult deals [Empathy]-based Genesis damage resets [Empathy] and at turn end, deals additional Genesis damage equal to a percentage of DMG Taken by the enemy that turn.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

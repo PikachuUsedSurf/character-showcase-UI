@@ -2,5 +2,20 @@
   "name": "Recoleta",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "S",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Ultimate Spam, Moxie Generation. ⌽ Gains different [Narrative] depending on the Moxie spent when allies cast Ults or when using S2. ⌽ Has a Moxie cap of 10. Using Ult consumes all Moxie and [Narrative] to boost Ult damage. For each Moxie consumed past 5, grant it to the ally with the lowest Moxie and gain Ult Might. If more than 10 [Narrative] is consumed, create [Flood of Fiction] next turn. ⌽ Gain [Flood of Fiction] when entering battle. This precast skill forces the ally with the highest Moxie to use their Ult immediately and refunds Moxie consumed this way, up to 5. (Does not count as FUA). ⌽ S1 inflicts [Passion Drain]; attacking inflicted targets gives Moxie.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

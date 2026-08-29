@@ -2,5 +2,20 @@
   "name": "Kaalaa Baunaa",
   "tag": "Mineral",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "B",
+    "raid": "B",
+    "roguelike": "B",
+    "reveries": "B"
+  },
+  "bio": "Archetype: ST DPT, AoE DPT, AP-Greedy. ⌽ Skills grant [Planet]s, passively increasing damage and other skill effects. ⌽ When [Planet]s are removed through Ult or cycled out, grants a stronger stack based buff. ⌽ S1 grants [Saturn], increasing Penetration Rate. ⌽ S2 grants [Mars], increasing Leech Rate. ⌽ Ult grants [Moon], increasing Incantation Might. ⌽ Ult removes all [Planet]s and gains an additional affect. depending on the highest type of [Planet] removed. ⌽ Damage relies on Ult cycling; very AP-Greedy.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

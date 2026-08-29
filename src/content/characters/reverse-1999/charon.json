@@ -2,5 +2,20 @@
   "name": "Charon",
   "tag": "Spirit",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Dynamo, AoE DPT, Reaping. ⌽ Deploys [Pulsing Field] at turn start if it isn't already active. Injects [Dynamo] into [Pulsing Field] to upgrade it at turn end. ⌽ When [Pulsing Field] levels up, consumes extra [Dynamo] to skip Lv. 2 and go directly to Lv. 3. When this happens, the next Ultimates cast by self and the ally in front cost no AP. ⌽ Skills debuff enemies and buff allies, granting additional DMG bonus, Crit Rate and crit conversion. Enemies with his debuff take Genesis DMG when they're at low HP. ⌽ Gains extra Moxie for each Spirit/Intellect ally when entering battle. ⌽ Unit death, skill use, overflowing [Dynamo] and ally Moxie grant Charon [Shock Wave], which he consumes to attack all enemies when under Ultimate channel. Each attack increases the duration of the buffs and debuffs he inflicted, and generates Moxie and [Dynamo] for himself.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

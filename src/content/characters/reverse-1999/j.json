@@ -2,5 +2,20 @@
   "name": "J",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "A",
+    "lucidscape": "S",
+    "raid": "B",
+    "roguelike": "A",
+    "reveries": "A"
+  },
+  "bio": "Archetype: Shielding, Counter, AoE DPT, HP Burn. ⌽ When inflicting [Burn], gain the same amount of [Burn]. ([Burn] damage stops when J is at 15% max HP). ⌽ S2 grants team-wide special shield that scales with self-[Burn]. With enough [Burn] this shield becomes very thick. ⌽ For each ally hit while under this special shield, ripostes with an AoE follow up attack. Less HP = more riposte damage. ⌽ Very strong when faced with multiple enemies with multiple AP and AoE attacks, but requires a strong sustain in such scenarios.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "37",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "DPS",
+  "tiers": {
+    "overall": "C",
+    "limbo": "B",
+    "lucidscape": "A",
+    "raid": "B",
+    "roguelike": "A",
+    "reveries": "B"
+  },
+  "bio": "Archetype: AoE DPT, Extra Action, Crit-Rate Dependent. ⌽ Accumulates [Eureka] when casting an incantation or when an ally takes an Extra Action. ⌽ When reaching 5 [Eureka], consumes all [Eureka] to cast an FUA [Supplementary Formula]. ⌽ Ult provides [Eureka] for self and ATK buff for team. ⌽ Insight 3 grants additional Crit Rate and allows own Genesis DMG to crit; effective against enemies with high DEF/DMG Taken Reduction. ⌽ Extremely squishy; needs good defensive support.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Easy"
+    }
+  ]
 }

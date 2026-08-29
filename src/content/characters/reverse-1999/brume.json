@@ -2,5 +2,20 @@
   "name": "Brume",
   "tag": "Beast",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Dynamo, Extra Action, Mental-Oriented Buff. ⌽ Deploys [Pulsing Field] at turn start if it isn't already active. Injects [Dynamo] into [Pulsing Field] at turn end. ⌽ Gains [Thermoelectric Conversion] at turn start, when [Dynamo] is injected, and when [Burn] is inflicted. ⌽ Adaptive Skill 1 – can choose to enter channel and perform ST Extra Actions at turn end with bonus damage and AoE effects from consuming [Thermoelectric Conversion], or gain a buff that increases damage dealt by said Extra Actions. These Extra Actions inflict [Burn]. ⌽ Skill 2 buffs allies' DMG Bonus and Incantation Might, and allows their attacks to decrease enemy Crit Resist and Crit DEF. ⌽ Ultimate locks a target for her Extra Action. Her channel is lengthened and her Extra Actions deal more damage in a Lv. 3 [Pulsing Field].",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

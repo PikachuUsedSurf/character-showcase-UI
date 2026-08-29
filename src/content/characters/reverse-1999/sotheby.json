@@ -2,5 +2,20 @@
   "name": "Sotheby",
   "tag": "Plant",
   "rarity": 6,
-  "kitPending": true
+  "role": "Healer",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: AoE DoT, AoE HoT. ⌽ Skill 1 inflicts [Poison], Skill 2 applies [Cure]. Kit revolves around tick effects. ⌽ Ultimate procs all [Poison] and [Cure] stacks immediately for good burst damage/healing. ⌽ Synergy with \"Blasphemer of Night\" using [Poison] stacks. ⌽ No on-demand healing, must plan out heals, otherwise heals are okay.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

@@ -2,5 +2,20 @@
   "name": "Cheng Heguang",
   "tag": "Star",
   "rarity": 6,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "S+",
+    "limbo": "S+",
+    "lucidscape": "S+",
+    "raid": "S+",
+    "roguelike": "S+",
+    "reveries": "S+"
+  },
+  "bio": "Archetype: Deck Fixing, Extra action, +AP. ⌽ Gain [Work as One] from S2 and Ult: After ally attack, Cheng also attacks the main target, up to a few times per turn. ⌽ For every few actions taken, gain Moxie and grant buffs to the whole team. ⌽ After attacking enough times, the next Ult deals more damage and doesn't cost AP. ⌽ Gain [Lofty Ambitions] from Ult: Converts all Cheng's skills (Including those drawn to hand afterwards and from shuffling) into random ally skills, hand size -2, AP+1.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Medium"
+    }
+  ]
 }

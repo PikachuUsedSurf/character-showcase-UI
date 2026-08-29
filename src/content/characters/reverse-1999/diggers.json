@@ -2,5 +2,20 @@
   "name": "Diggers",
   "tag": "Plant",
   "rarity": 5,
-  "kitPending": true
+  "role": "Support",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "bio": "Archetype: DEF Debuff, ATK Debuff, Control. ⌽ Can inflict [Weakness], [Fear] and [Nightmare]; a mix of DMG Reduction and control. ⌽ S2 consistently applies AoE Mental DEF reduction. ⌽ Only gives 15% to a character at a time due to only having -Reality DEF and -Mental DEF ⌽ Ultimate inflicts [Nightmare], extended against debuffed enemies. S1 can apply [Weakness] and S2 [Terror]. ⌽ Insight becomes useless after 3 turns.",
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }

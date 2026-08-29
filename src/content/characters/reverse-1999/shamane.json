@@ -1,8 +1,21 @@
 {
   "name": "Shamane",
-  "role": "DPS",
+  "role": "Support",
   "tag": "Beast",
   "rarity": 6,
-  "bio": "Specializes in massive burst Reality damage while debuffing enemies — one of the game's strongest DEF-reduction debuffers.",
-  "kitPending": true
+  "bio": "Archetype: DEF Debuff, Splash ST DPT. ⌽ Skill 2 inflicts DEF reduction and DMG taken increase. ⌽ Stores Moxie with Tier 2+ Skill 1 & every 2 turns, allowing faster Ultimate cycling. ⌽ Ultimate is an ST nuke with splash damage; ST-AoE hybrid. ⌽ Skill 2 synergizes with Insight 1 for more damage.",
+  "tiers": {
+    "overall": "C",
+    "limbo": "C",
+    "lucidscape": "C",
+    "raid": "C",
+    "roguelike": "C",
+    "reveries": "C"
+  },
+  "stats": [
+    {
+      "label": "Ease of Use",
+      "value": "Foolproof"
+    }
+  ]
 }
