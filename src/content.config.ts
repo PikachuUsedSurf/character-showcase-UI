@@ -9,6 +9,22 @@ const games = defineCollection({
     status: z.enum(["live", "development", "planned"]),
     order: z.number(),
     description: z.string(),
+    tierModes: z
+      .array(
+        z.object({
+          slug: z.string(),
+          name: z.string(),
+        }),
+      )
+      .optional(),
+    tierNotes: z
+      .array(
+        z.object({
+          title: z.string(),
+          body: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 
@@ -16,7 +32,7 @@ const characters = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/characters" }),
   schema: z.object({
     name: z.string(),
-    role: z.string(),
+    role: z.string().optional(),
     tag: z.string().optional(),
     affiliation: z.string().optional(),
     unitNo: z.string().optional(),
@@ -25,7 +41,7 @@ const characters = defineCollection({
     portrait: z.string().optional(),
     sprite: z.string().optional(),
     kitPending: z.boolean().optional(),
-    tier: z.enum(["S", "A", "B", "C"]).optional(),
+    tiers: z.record(z.string(), z.enum(["S+", "S", "A", "B", "C"])).optional(),
     stats: z
       .array(
         z.object({

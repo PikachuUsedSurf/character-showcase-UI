@@ -1,0 +1,11 @@
+{
+  "name": "Lisbell",
+  "role": "DPS",
+  "tag": "Lumino",
+  "rarity": 4,
+  "bio": "A melee bruiser who wields a greatsword and shotgun, charging into range to unload a burst combo. Her passive rewards pulling combos together with additional enhancement.",
+  "tiers": {
+    "overall": "A"
+  },
+  "kitPending": true
+}

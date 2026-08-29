@@ -1,0 +1,16 @@
+{
+  "name": "Flora",
+  "role": "DPS",
+  "tag": "Umbro",
+  "bio": "A heavy-hitting melee DPS who wields sword and assault rifle, built around weapon damage rather than skills.",
+  "kitPending": true,
+  "tiers": {
+    "overall": "S+"
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Chainbreak Pinion"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Phantasio",
+  "role": "DPS",
+  "tag": "Umbro",
+  "rarity": 5,
+  "bio": "Wields a greatsword and shotgun as an Umbro-aligned damage dealer.",
+  "skills": [
+    {
+      "name": "Recitativo",
+      "type": "Active",
+      "desc": "Deals Umbro Damage to enemies in front and inflicts 5 stacks of [Adagio] on them, up to 10 stacks. The remaining time of the effect is refreshed with each new stack gained. While in [Bestial Fury] state, this skill is replaced with [Aria]."
+    },
+    {
+      "name": "Curtain Up",
+      "type": "Active",
+      "desc": "Enters [Bestial Fury] state and continuously consumes Sanity; when Sanity drops to 0, [Bestial Fury] state ends. Weapons can not be used during [Bestial Fury] state. Melee Attack is replaced with [Furious Claws], performing up to four consecutive attacks to deal Umbro Damage. When used in the air, Phantasio performs Plunging Attack and deals Umbro damage to enemies within range. Ranged Attack is replaced with [Mournful Howl], firing an energy beam to deal Umbro Damage. When the 3-hit of [Furious Claws] and [Mournful Howl] deal damage, triggers the [Duo] effect; when the 4-hit of [Furious Claws] and the Plunging Attack deal damage, triggers the [Fermata] effect."
+    },
+    {
+      "name": "On Stage",
+      "type": "Active",
+      "desc": "When in [Bestial Fury] state, increases Attack based on Phantasio's Max Sanity. Phantasio gains [Immersion] by using skills, with the [Immersion] cap equal to Phantasio's Max Sanity. Using [Recitativo] or [Aria] grants a certain amount of [Immersion]; while in [Bestial Fury] state, continuously gains [Immersion] per second. When [Immersion] reaches its maximum in [Bestial Fury] state, Phantasio enters [Bestial Fury: Devotion] state."
+    },
+    {
+      "name": "Concerto",
+      "type": "Active",
+      "desc": "When the 3-hit of [Furious Claws] and [Mournful Howl] deal damage, there is a chance to inflict 1 [Adagio] stack on the targets."
+    },
+    {
+      "name": "Scales of Justice",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Umbro teammate(s)."
+    }
+  ]
+}

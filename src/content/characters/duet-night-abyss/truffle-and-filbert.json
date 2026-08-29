@@ -1,0 +1,32 @@
+{
+  "name": "Truffle and Filbert",
+  "role": "Support",
+  "tag": "Anemo",
+  "rarity": 5,
+  "bio": "A devout duo embodying innocence and faith, wielding holy energy through a polearm and bow — light projectiles paired with healing bursts.",
+  "tiers": {
+    "mystic-maze": "S"
+  },
+  "skills": [
+    {
+      "name": "Trotters Trot-Trot",
+      "type": "Active",
+      "desc": "Commands [Filbert] to charge forwards, dealing Anemo Damage to enemies in the path. Upon hitting any obstacles, deals AoE Anemo Damage at the endpoint. When using this skill, heals Truffle and Filbert and her nearby teammates and increases their damage. When Truffle rides on [Filbert], this skill is replaced with [Trotters Charge-Charge]."
+    },
+    {
+      "name": "Tummy Full, Hands Full",
+      "type": "Active",
+      "desc": "Truffle rides on [Filbert] and gains 100 points of [Passion For Work] and a Movement Speed boost, dealing Anemo Damage to enemies in the path when moving. When riding on [Filbert], Truffle is unable to use any weapon but can command [Filbert] to attack. When this skill is used again, Truffle dismounts and unleashes [Trotters Trot-Trot] once."
+    },
+    {
+      "name": "Chop-Chop, Commissaries!",
+      "type": "Active",
+      "desc": "Gains 1 stack of [Heavyweight] for every second Truffle keeps moving, up to 10 stacks. [Heavyweight]: Increases Damage Dealt and decreases Damage Taken."
+    },
+    {
+      "name": "Peep & Peck",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases Malaise for the character and nearby teammates when 2 or more characters in the team share the same element type."
+    }
+  ]
+}

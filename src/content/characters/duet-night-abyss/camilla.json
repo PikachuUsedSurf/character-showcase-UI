@@ -1,0 +1,16 @@
+{
+  "name": "Camilla",
+  "role": "Support",
+  "tag": "Pyro",
+  "bio": "Fights with a whipblade and assault rifle. Her ultimate, Claret Waltz, summons Sommelier Blades that orbit her and cut through anything in their path for consistent AoE pressure.",
+  "kitPending": true,
+  "tiers": {
+    "overall": "A"
+  },
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Dregs of Glimmer"
+    }
+  ]
+}

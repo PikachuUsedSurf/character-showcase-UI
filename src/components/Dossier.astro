@@ -14,7 +14,8 @@ interface Skill {
 
 interface Props {
   name: string;
-  role: string;
+  role?: string;
+  tag?: string;
   affiliation?: string;
   unitNo?: string;
   rarity?: number;
@@ -24,7 +25,7 @@ interface Props {
   skills?: Skill[];
 }
 
-const { name, role, affiliation, unitNo, rarity, bio, portrait, stats, skills } = Astro.props;
+const { name, role, tag, affiliation, unitNo, rarity, bio, portrait, stats, skills } = Astro.props;
 
 const iconFor: Record<string, string> = {
   "EX Skill": "/images/skill-icons/ex-skill.png",
@@ -38,7 +39,11 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
 
 <div class="dossier">
   <div class="dossier-media">
-    {portrait && <div class="portrait" style={`background-image:url(${portrait})`}><span class="corner-tag">FIG. 01 — FIELD PORTRAIT</span></div>}
+    {portrait ? (
+      <div class="portrait" style={`background-image:url(${portrait})`}><span class="corner-tag">FIG. 01 — FIELD PORTRAIT</span></div>
+    ) : (
+      <div class="portrait placeholder"><span class="glyph">{name.charAt(0)}</span><span class="corner-tag">FIG. 01 — AWAITING UPLOAD</span></div>
+    )}
   </div>
   <div class="dossier-main">
     <div class="dossier-toprow">
@@ -49,7 +54,13 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
           </div>
         )}
         <h1 class="dossier-name">{name}</h1>
-        <div class="dossier-role">{role}</div>
+        {(role || tag) && (
+          <div class="dossier-role">
+            {role}
+            {role && tag && " · "}
+            {tag}
+          </div>
+        )}
       </div>
       {rarity && (
         <div class="dossier-rarity">
@@ -154,6 +165,21 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
     background: linear-gradient(180deg, transparent 60%, rgb(5 9 11 / 85%));
   }
 
+  .portrait.placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--panel-2);
+  }
+
+  .portrait.placeholder::after {
+    background: none;
+  }
+
+  .portrait .glyph {
+    font: 700 64px var(--f-display);
+    color: var(--dim);
+  }
+
   .corner-tag {
     position: absolute;
     bottom: 14px;
@@ -210,17 +236,11 @@ const types = skills ? Array.from(new Set(skills.map((s) => s.type).filter(Boole
 
   .stat-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
     margin: 22px 0;
-  }
-
-  @media (max-width: 520px) {
-    .stat-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
 
   .stat {

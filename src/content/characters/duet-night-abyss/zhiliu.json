@@ -1,0 +1,44 @@
+{
+  "name": "Zhiliu",
+  "role": "DPS",
+  "tag": "Electro",
+  "rarity": 5,
+  "bio": "A skill-damage-oriented fighter wielding a greatsword and dual pistols. Her signature gimmick is an ultimate that can take three different forms.",
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  },
+  "skills": [
+    {
+      "name": "Celestial Revelation",
+      "type": "Active",
+      "desc": "Click to use [Celestial Revelation: Quake]. Deals Electro Damage to enemies within range and grants 1 [Spring Fulu: Quake]. Hold to use [Celestial Revelation: Wind]. Deals Electro Damage to enemies within range, applies Ultra Shield, and grants 1 [Spring Fulu: Wind]."
+    },
+    {
+      "name": "Cosmic Play",
+      "type": "Active",
+      "desc": "When you have fewer than 2 [Spring Fulus], deals Electro Damage to enemies within range. When you have 2 [Spring Fulus], this skill changes based on your [Spring Fulu] types."
+    },
+    {
+      "name": "Dual Fulu Waltz",
+      "type": "Active",
+      "desc": "Uses [Celestial Revelation] to get [Spring Fulus]. You can have up to 2 [Spring Fulus] at a time. The oldest [Spring Fulu] is removed when exceeding the limit. When removing [Spring Fulus] after using [Thunder Echo], [Life Surge], or [Heaven's Clarity], each has a chance to remain active based on your Melee Weapon's Trigger Probability."
+    },
+    {
+      "name": "Synergy",
+      "type": "Active",
+      "desc": "Grants 1 stack of Morale when you or your teammates deal Electro Skill DMG (up to 10 stacks)."
+    },
+    {
+      "name": "Divine Retribution",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Electro teammate(s)."
+    }
+  ],
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Eternal Farewell"
+    }
+  ]
+}

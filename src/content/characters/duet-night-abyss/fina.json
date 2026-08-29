@@ -1,0 +1,44 @@
+{
+  "name": "Fina",
+  "role": "Support",
+  "tag": "Lumino",
+  "rarity": 5,
+  "bio": "A young spellcaster who manipulates light and ice, built around one idea: keep the buffs running and make everyone's weapon attacks hit harder. One of the game's best offensive supports, with book-based attacks that grant consistent crowd control.",
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  },
+  "skills": [
+    {
+      "name": "\"On a Warm Afternoon\"",
+      "type": "Active",
+      "desc": "Deals Lumino Damage to enemies within range and decreases their Movement Speed. When using this skill in [Boisterous Tea Party], the damage is increased, and the damage range is expanded to the same range of [Boisterous Tea Party]."
+    },
+    {
+      "name": "\"Let the Tea Party Begin!\"",
+      "type": "Active",
+      "desc": "Creates a [Boisterous Tea Party] field in front of Fina. [Boisterous Tea Party] continuously consumes Sanity and ends when Sanity drops to 0 or when this skill is long pressed. During [Boisterous Tea Party], using the skill again will switch the field effects in the order of the [Tea Party Guests]: [Nightingale], [Hound], [Unicorn], and [Butterfly]. Using the skill again outside the range of [Boisterous Tea Party] will relocate it to Fina's current location."
+    },
+    {
+      "name": "\"Bad Sorcerers Hate Sunlight!\"",
+      "type": "Active",
+      "desc": "Fina gains the ability to deal additional Lumino Damage throughout the battle. When using [\"On a Warm Afternoon\"], gains 3 stacks of [Taleweaver Quill]. During [Boisterous Tea Party], gains 1 stack of [Taleweaver Quill] per second, up to 30 stacks."
+    },
+    {
+      "name": "\"To Be Continued\"",
+      "type": "Active",
+      "desc": "When using [\"On a Warm Afternoon\"], increases the CRIT Chance of Fina's and her nearby teammates' weapon attack based on the number of [Taleweaver Quill] stacks gained."
+    },
+    {
+      "name": "\"Advance, Poker Card Soldiers!\"",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases Weapon DMG for the character and their nearby teammates mastering in Sword or Assault Rifle."
+    }
+  ],
+  "stats": [
+    {
+      "label": "Signature Weapon",
+      "value": "Dreamweaver's Feather"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Psyche",
+  "role": "DPS",
+  "tag": "Anemo",
+  "rarity": 5,
+  "bio": "Fights with a polearm-scythe and assault rifle, and can take to the air. Her passive, Amberlight, stacks buffs on critical hits — built for heavy single-target damage.",
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  },
+  "skills": [
+    {
+      "name": "Chrysalis Dreamweave",
+      "type": "Active",
+      "desc": "Creates 1 [Phantasm] and then flashes forward. This skill can be used at any time without interrupting Psyche's current action. In [Flamboyance] state, this skill is replaced with [Phototaxis]."
+    },
+    {
+      "name": "Fluorescent Eclosion",
+      "type": "Active",
+      "desc": "Enters [Flamboyance] state and gains the ability to fly. When in [Flamboyance] state, Psyche can only use skills and shoot. [Flamboyance] state continuously consumes Sanity, and when Sanity drops to 0 or this skill is used again, [Flamboyance] state ends. When Psyche's HP percentage is above 15%, [Flamboyance] state consumes HP instead of Sanity. The consumed HP will be converted into Ultra Shield at a certain percentage."
+    },
+    {
+      "name": "Amberlight",
+      "type": "Active",
+      "desc": "When dealing CRIT damage, Psyche gains one of the following buffs at random: ATK Boost, Skill Damage Boost, or Malaise Boost. Increases Psyche's damage for each buff she gains, up to 12 buffs."
+    },
+    {
+      "name": "Ephemeral as Dew",
+      "type": "Active",
+      "desc": "When using [Fluorescent Eclosion], if Psyche's HP percentage is no less than 75%, gains [Ephemeral as Dew]. [Ephemeral as Dew]: When triggering the effect of Morale/Malaise, it regards Psyche's HP percentage as 1%. This effect can only be triggered once every 90s."
+    },
+    {
+      "name": "Mirth Carries",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and nearby Anemo teammates."
+    }
+  ]
+}

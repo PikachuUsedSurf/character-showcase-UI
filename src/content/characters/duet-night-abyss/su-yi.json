@@ -1,0 +1,11 @@
+{
+  "name": "Su Yi",
+  "role": "DPS",
+  "tag": "Lumino",
+  "bio": "Fights with a polearm and shotgun, flying at high speed to annihilate groups of enemies with wide AoE attacks.",
+  "kitPending": true,
+  "tiers": {
+    "overall": "S+",
+    "mystic-maze": "S"
+  }
+}

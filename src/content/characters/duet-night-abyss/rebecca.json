@@ -1,0 +1,37 @@
+{
+  "name": "Rebecca",
+  "role": "DPS",
+  "tag": "Hydro",
+  "rarity": 5,
+  "bio": "A summoner-type damage dealer who fights indirectly through Aurelia Auritas, wielding a polearm and grenade launcher. Can field multiple summons at once, each inheriting her own stats.",
+  "tiers": {
+    "overall": "S"
+  },
+  "skills": [
+    {
+      "name": "Aurelian Caress",
+      "type": "Active",
+      "desc": "Summons 1 [Aurelia Aurita]. A maximum of 3 can exist at the same time."
+    },
+    {
+      "name": "Lada Lovedew",
+      "type": "Active",
+      "desc": "Deals Hydro Damage to nearby enemies; the damage is increased based on the number of [Poison of Love] stacks inflicted on the enemies."
+    },
+    {
+      "name": "Truelove Trial",
+      "type": "Active",
+      "desc": "When dealing damage with a melee weapon or [Aurelia Aurita]'s attack, inflicts 1 stack of [Poison of Love] on the target, up to 6 stacks."
+    },
+    {
+      "name": "Lovesick Synergy",
+      "type": "Active",
+      "desc": "When dealing damage with a Normal Attack using a melee weapon, there's a chance to have [Poison of Love] inflicted on the target to deal additional damage once. Dealing damage with [Lada Lovedew] will always trigger this effect."
+    },
+    {
+      "name": "Seven-Day Spread",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Hydro teammate(s)."
+    }
+  ]
+}

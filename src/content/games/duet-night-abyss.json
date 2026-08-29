@@ -1,7 +1,21 @@
 {
   "name": "Duet Night Abyss",
   "accent": "#ff6ec7",
-  "status": "planned",
+  "status": "development",
   "order": 4,
-  "description": "Operative roster and weapon builds — scheduled for next intake."
+  "description": "Element-driven ARPG roster — DPS and Support builds tracked, full kit data upload in progress.",
+  "tierModes": [
+    { "slug": "overall", "name": "Overall" },
+    { "slug": "mystic-maze", "name": "Mystic Maze" }
+  ],
+  "tierNotes": [
+    {
+      "title": "Immersive Theatre",
+      "body": "Theater doesn't reduce to a fixed ranking — each stage favors a specific element, and the strongest pick is whichever roster covers that element. Umbro-favored stages, for example, lean on Flora or the Umbro-aligned Phoxhunter. A static tier list would misrepresent how this mode actually works."
+    },
+    {
+      "title": "Farming tiers by level bracket",
+      "body": "No public source currently splits the meta into sub-Lv.100 vs Lv.100+ farming tiers for this game — rankings are benchmarked at max investment across the board. This section will fill in if that changes."
+    }
+  ]
 }

@@ -1,0 +1,37 @@
+{
+  "name": "Berenica",
+  "role": "DPS",
+  "tag": "Umbro",
+  "rarity": 4,
+  "bio": "Fights with a sword and dual pistols, detonating Umbro-aligned area attacks for high burst damage.",
+  "tiers": {
+    "overall": "B"
+  },
+  "skills": [
+    {
+      "name": "Faintlight",
+      "type": "Active",
+      "desc": "Rush forward, dealing AoE Damage 4 times along the way."
+    },
+    {
+      "name": "Netherflames",
+      "type": "Active",
+      "desc": "Switches the melee weapon to [Ymir] and casts 1 Swordwave. When performing Normal Attack using [Ymir], unleashes Swordwaves in the attacking direction and constantly consumes Sanity, during which Berenica is immune to Hitstun when taking damage. Once Sanity reaches 0 or the skill is used again, [Ymir] is sheathed."
+    },
+    {
+      "name": "Recuperation",
+      "type": "Active",
+      "desc": "When dealing damage with [Faintlight] or Sword, there is a chance to restore Sanity."
+    },
+    {
+      "name": "Afterburn",
+      "type": "Active",
+      "desc": "After using [Netherflames], the next use of [Faintlight] will not consume Sanity."
+    },
+    {
+      "name": "Heart Devourer",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Umbro teammate(s)."
+    }
+  ]
+}

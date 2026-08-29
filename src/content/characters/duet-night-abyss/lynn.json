@@ -1,0 +1,34 @@
+{
+  "name": "Lynn",
+  "role": "DPS",
+  "tag": "Pyro",
+  "rarity": 5,
+  "bio": "A relentless combatant who masters greatsword and dual pistols, focused on close-to-mid range offense and mechanical augmentation — one of the more balanced DPS units.",
+  "skills": [
+    {
+      "name": "Deadly Blossom",
+      "type": "Active",
+      "desc": "Deals Pyro Damage to enemies in front and inflicts [Laceration]."
+    },
+    {
+      "name": "Gunpowder Revelry",
+      "type": "Active",
+      "desc": "Switches the ranged weapon to [Hansel and Gretel]. In this state, Lynn can shoot and use skills, but cannot move. Shooting deals damage to all enemies in front, during which Lynn gains 1 stack that increases Lynn's ATK Speed every 0.2s, up to 35 stacks. Using [Hansel and Gretel] continuously consumes Sanity, during which Lynn is immune to Hitstun when taking damage. When Sanity drops to 0 or the skill is used again, sheathes [Hansel and Gretel]."
+    },
+    {
+      "name": "Tactical Rapid Fire",
+      "type": "Active",
+      "desc": "When not shooting, Lynn gains 1 [Preload] stack per second, up to 6 stacks. When shooting, consumes all [Preload] stacks to gain [Suppressing Fire] for a period of time. [Suppressing Fire]: Increases the damage based on the number of the consumed [Preload] stacks. Cannot gain [Preload] stack during [Suppressing Fire]."
+    },
+    {
+      "name": "The Unforgivable",
+      "type": "Active",
+      "desc": "Immediately removes [Laceration] and deals damage once the [Lacerated Wound] count reaches its maximum."
+    },
+    {
+      "name": "Hellforge",
+      "type": "Combat Partner",
+      "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Pyro teammate(s)."
+    }
+  ]
+}
