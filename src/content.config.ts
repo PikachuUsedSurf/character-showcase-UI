@@ -25,7 +25,7 @@ const characters = defineCollection({
     portrait: z.string().optional(),
     sprite: z.string().optional(),
     kitPending: z.boolean().optional(),
-    tier: z.enum(["S", "A", "B", "C"]).optional(),
+    tier: z.enum(["S+", "S", "A", "B", "C"]).optional(),
     stats: z
       .array(
         z.object({

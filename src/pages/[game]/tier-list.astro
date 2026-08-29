@@ -19,10 +19,17 @@ const allCharacters = await getCollection("characters");
 const roster = allCharacters.filter((c) => c.id.startsWith(`${gameId}/`));
 const ranked = roster.filter((c) => c.data.tier);
 
-const tiers = ["S", "A", "B", "C"] as const;
-const bands = tiers.map((tier) => ({
-  tier,
-  units: ranked.filter((c) => c.data.tier === tier),
+const tiers = [
+  { value: "S+", css: "splus" },
+  { value: "S", css: "s" },
+  { value: "A", css: "a" },
+  { value: "B", css: "b" },
+  { value: "C", css: "c" },
+] as const;
+const bands = tiers.map(({ value, css }) => ({
+  tier: value,
+  css,
+  units: ranked.filter((c) => c.data.tier === value),
 }));
 ---
 
@@ -38,8 +45,8 @@ const bands = tiers.map((tier) => ({
 
     {ranked.length > 0 ? (
       <div class="tierlist">
-        {bands.map(({ tier, units }) => units.length > 0 && (
-          <div class={`tier-row t-${tier.toLowerCase()}`}>
+        {bands.map(({ tier, css, units }) => units.length > 0 && (
+          <div class={`tier-row t-${css}`}>
             <div class="tier-label">{tier}</div>
             <div class="tier-units">
               {units.map((c) => (
@@ -110,6 +117,7 @@ const bands = tiers.map((tier) => ({
     color: var(--void);
   }
 
+  .t-splus .tier-label,
   .t-s .tier-label {
     background: var(--amber);
   }
