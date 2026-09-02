@@ -7,5 +7,7 @@
   "tiers": {
     "overall": "S+",
     "mystic-maze": "S"
-  }
+  },
+  "portrait": "su-yi.webp",
+  "sprite": "su-yi.webp"
 }

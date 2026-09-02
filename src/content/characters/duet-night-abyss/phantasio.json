@@ -30,5 +30,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and their nearby Umbro teammate(s)."
     }
-  ]
+  ],
+  "portrait": "phantasio.webp",
+  "sprite": "phantasio.webp"
 }

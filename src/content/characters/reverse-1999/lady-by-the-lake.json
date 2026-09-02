@@ -2,5 +2,7 @@
   "name": "Lady by the Lake",
   "tag": "Plant",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "lady-by-the-lake.webp",
+  "sprite": "lady-by-the-lake.webp"
 }

@@ -33,5 +33,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases Skill DMG for the character and their nearby teammate(s)."
     }
-  ]
+  ],
+  "portrait": "tabethe.webp",
+  "sprite": "tabethe.webp"
 }

@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "medicine-pocket.webp",
+  "sprite": "medicine-pocket.webp"
 }

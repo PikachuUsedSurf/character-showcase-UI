@@ -33,5 +33,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases ATK for the character and nearby Anemo teammates."
     }
-  ]
+  ],
+  "portrait": "outsider.webp",
+  "sprite": "outsider.webp"
 }

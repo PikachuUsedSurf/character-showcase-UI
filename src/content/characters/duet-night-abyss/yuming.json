@@ -33,5 +33,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases Morale for you and Electro teammates within range."
     }
-  ]
+  ],
+  "portrait": "yuming.webp",
+  "sprite": "yuming.webp"
 }

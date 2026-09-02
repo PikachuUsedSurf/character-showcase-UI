@@ -2,5 +2,7 @@
   "name": "Erick",
   "tag": "Star",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "erick.webp",
+  "sprite": "erick.webp"
 }

@@ -2,5 +2,7 @@
   "name": "Rabies",
   "tag": "Plant",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "rabies.webp",
+  "sprite": "rabies.webp"
 }

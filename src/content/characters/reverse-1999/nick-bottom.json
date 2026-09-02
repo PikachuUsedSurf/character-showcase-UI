@@ -2,5 +2,7 @@
   "name": "Nick Bottom",
   "tag": "Beast",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "nick-bottom.webp",
+  "sprite": "nick-bottom.webp"
 }

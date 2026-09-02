@@ -7,5 +7,7 @@
   "tiers": {
     "overall": "A"
   },
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "lisbell.webp",
+  "sprite": "lisbell.webp"
 }

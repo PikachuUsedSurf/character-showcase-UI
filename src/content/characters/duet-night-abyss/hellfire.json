@@ -39,5 +39,7 @@
       "label": "Signature Weapon",
       "value": "Punitive Inferno"
     }
-  ]
+  ],
+  "portrait": "hellfire.webp",
+  "sprite": "hellfire.webp"
 }

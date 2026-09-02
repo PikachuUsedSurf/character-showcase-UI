@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "desert-flannel.webp",
+  "sprite": "desert-flannel.webp"
 }

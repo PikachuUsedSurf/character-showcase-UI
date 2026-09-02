@@ -40,5 +40,7 @@
       "label": "Signature Weapon",
       "value": "Eternal Farewell"
     }
-  ]
+  ],
+  "portrait": "zhiliu.webp",
+  "sprite": "zhiliu.webp"
 }

@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Medium"
     }
-  ]
+  ],
+  "portrait": "getian.webp",
+  "sprite": "getian.webp"
 }

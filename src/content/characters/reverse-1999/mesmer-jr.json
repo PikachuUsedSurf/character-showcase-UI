@@ -2,5 +2,7 @@
   "name": "Mesmer Jr.",
   "tag": "Intellect",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "mesmer-jr.webp",
+  "sprite": "mesmer-jr.webp"
 }

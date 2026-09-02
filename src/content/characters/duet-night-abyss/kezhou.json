@@ -36,5 +36,7 @@
       "label": "Signature Weapon",
       "value": "Ephemeral Lumina"
     }
-  ]
+  ],
+  "portrait": "kezhou.webp",
+  "sprite": "kezhou.webp"
 }

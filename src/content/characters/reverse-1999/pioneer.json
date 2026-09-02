@@ -2,5 +2,7 @@
   "name": "Pioneer",
   "tag": "Spirit",
   "rarity": 3,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "pioneer.webp",
+  "sprite": "pioneer.webp"
 }

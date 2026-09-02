@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Easy"
     }
-  ]
+  ],
+  "portrait": "brimley.webp",
+  "sprite": "brimley.webp"
 }

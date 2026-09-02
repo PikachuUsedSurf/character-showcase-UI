@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Medium"
     }
-  ]
+  ],
+  "portrait": "coppelia.webp",
+  "sprite": "coppelia.webp"
 }

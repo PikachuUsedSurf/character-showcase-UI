@@ -39,5 +39,7 @@
       "label": "Signature Weapon",
       "value": "Embla Inflorescence"
     }
-  ]
+  ],
+  "portrait": "lady-nifle.webp",
+  "sprite": "lady-nifle.webp"
 }

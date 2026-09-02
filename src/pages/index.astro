@@ -32,9 +32,12 @@ const cards = games.map((game) => {
       <p class="eyebrow">Select Deployment</p>
       <h1>Choose your operation</h1>
       <p>One archive, one interface, {games.length} titles tracked. Every game below runs the same dossier, roster, and tier-list system — only the accent color and the data change.</p>
-      <div class="query">
-        <input type="text" placeholder="search across all titles..." />
-        <span>⏎ SEARCH</span>
+      <div class="search-wrap" data-hub-search>
+        <div class="query">
+          <input type="text" id="search-input" placeholder="search across all titles..." autocomplete="off" />
+          <span id="search-hint">⏎ SEARCH</span>
+        </div>
+        <div class="search-results" id="search-results" hidden></div>
       </div>
     </div>
 
@@ -98,15 +101,84 @@ const cards = games.map((game) => {
     margin: 18px auto 0;
   }
 
-  .query {
+  .search-wrap {
+    position: relative;
     max-width: 480px;
     margin: 32px auto 0;
+    text-align: left;
+  }
+
+  .query {
     display: flex;
     align-items: center;
     gap: 10px;
     border: 1px solid var(--line-strong);
     background: var(--panel);
     padding: 11px 16px;
+  }
+
+  .search-results {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: var(--panel);
+    border: 1px solid var(--line-strong);
+    max-height: 340px;
+    overflow-y: auto;
+    z-index: 30;
+  }
+
+  /*
+    The result items below are injected client-side via innerHTML, so Astro's
+    scoped-style hash never lands on them — these rules must be :global().
+  */
+  :global(.search-item) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+    font: 400 12.5px var(--f-mono);
+  }
+
+  :global(.search-item:last-child) {
+    border-bottom: 0;
+  }
+
+  :global(.search-item:hover),
+  :global(.search-item.active) {
+    background: var(--panel-2);
+  }
+
+  :global(.search-item .s-name) {
+    color: var(--ink-hi);
+    font-weight: 600;
+  }
+
+  :global(.search-item .s-role) {
+    color: var(--dim);
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  :global(.search-item .s-game) {
+    font: 600 9.5px var(--f-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border: 1px solid var(--line-strong);
+    white-space: nowrap;
+    flex: none;
+  }
+
+  :global(.search-empty) {
+    padding: 14px 16px;
+    color: var(--muted);
+    font: 400 12px var(--f-mono);
   }
 
   .query::before {
@@ -186,3 +258,107 @@ const cards = games.map((game) => {
     margin: 0;
   }
 </style>
+
+<script>
+  type Entry = { name: string; role: string; game: string; gameName: string; accent: string; href: string };
+
+  const wrap = document.querySelector<HTMLElement>("[data-hub-search]");
+  const input = document.getElementById("search-input") as HTMLInputElement | null;
+  const results = document.getElementById("search-results");
+  if (wrap && input && results) {
+    let index: Entry[] = [];
+    let active = -1;
+    let indexPromise: Promise<void> | null = null;
+
+    function ensureIndex(): Promise<void> {
+      if (!indexPromise) {
+        indexPromise = fetch("/search-index.json")
+          .then((res) => res.json())
+          .then((data) => {
+            index = data;
+          })
+          .catch(() => {
+            index = [];
+          });
+      }
+      return indexPromise;
+    }
+
+    function render(query: string) {
+      const q = query.trim().toLowerCase();
+      active = -1;
+      if (!q) {
+        results!.hidden = true;
+        results!.innerHTML = "";
+        return;
+      }
+      const matches = index.filter((e) => e.name.toLowerCase().includes(q)).slice(0, 8);
+      results!.innerHTML = "";
+      if (matches.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "search-empty";
+        empty.textContent = `No characters matching "${query}".`;
+        results!.appendChild(empty);
+      } else {
+        matches.forEach((m) => {
+          const a = document.createElement("a");
+          a.className = "search-item";
+          a.href = m.href;
+          a.innerHTML = `<span><span class="s-name">${escapeHtml(m.name)}</span><span class="s-role">${escapeHtml(m.role)}</span></span><span class="s-game" style="color:${m.accent};border-color:${m.accent}">${escapeHtml(m.gameName)}</span>`;
+          results!.appendChild(a);
+        });
+      }
+      results!.hidden = false;
+    }
+
+    function escapeHtml(s: string) {
+      return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
+    }
+
+    function items() {
+      return Array.from(results!.querySelectorAll<HTMLAnchorElement>(".search-item"));
+    }
+
+    function setActive(i: number) {
+      const list = items();
+      list.forEach((el) => el.classList.remove("active"));
+      if (i >= 0 && i < list.length) {
+        list[i].classList.add("active");
+        list[i].scrollIntoView({ block: "nearest" });
+      }
+      active = i;
+    }
+
+    input.addEventListener("focus", ensureIndex);
+    input.addEventListener("input", async () => {
+      await ensureIndex();
+      render(input.value);
+    });
+
+    input.addEventListener("keydown", (e) => {
+      const list = items();
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        if (list.length) setActive((active + 1) % list.length);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if (list.length) setActive((active - 1 + list.length) % list.length);
+      } else if (e.key === "Enter") {
+        if (active >= 0 && list[active]) {
+          window.location.href = list[active].href;
+        } else if (list.length === 1) {
+          window.location.href = list[0].href;
+        }
+      } else if (e.key === "Escape") {
+        results.hidden = true;
+        input.blur();
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!wrap.contains(e.target as Node)) {
+        results.hidden = true;
+      }
+    });
+  }
+</script>

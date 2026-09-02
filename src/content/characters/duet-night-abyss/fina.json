@@ -40,5 +40,7 @@
       "label": "Signature Weapon",
       "value": "Dreamweaver's Feather"
     }
-  ]
+  ],
+  "portrait": "fina.webp",
+  "sprite": "fina.webp"
 }

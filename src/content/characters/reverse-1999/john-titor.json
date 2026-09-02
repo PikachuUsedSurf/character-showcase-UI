@@ -2,5 +2,7 @@
   "name": "John Titor",
   "tag": "Intellect",
   "rarity": 3,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "john-titor.webp",
+  "sprite": "john-titor.webp"
 }

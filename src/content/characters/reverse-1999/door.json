@@ -2,5 +2,7 @@
   "name": "Door",
   "tag": "Intellect",
   "rarity": 2,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "door.webp",
+  "sprite": "door.webp"
 }

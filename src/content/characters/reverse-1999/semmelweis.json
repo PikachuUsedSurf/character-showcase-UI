@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Medium"
     }
-  ]
+  ],
+  "portrait": "semmelweis.webp",
+  "sprite": "semmelweis.webp"
 }

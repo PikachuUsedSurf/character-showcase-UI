@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "paper-heron.webp",
+  "sprite": "paper-heron.webp"
 }

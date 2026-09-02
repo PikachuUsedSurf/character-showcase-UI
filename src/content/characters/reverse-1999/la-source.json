@@ -2,5 +2,7 @@
   "name": "La Source",
   "tag": "Plant",
   "rarity": 3,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "la-source.webp",
+  "sprite": "la-source.webp"
 }

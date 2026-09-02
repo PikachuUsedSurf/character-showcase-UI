@@ -12,5 +12,7 @@
       "label": "Signature Weapon",
       "value": "Chainbreak Pinion"
     }
-  ]
+  ],
+  "portrait": "flora.webp",
+  "sprite": "flora.webp"
 }

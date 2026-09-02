@@ -2,5 +2,7 @@
   "name": "Ms. Radio",
   "tag": "Spirit",
   "rarity": 2,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "ms-radio.webp",
+  "sprite": "ms-radio.webp"
 }

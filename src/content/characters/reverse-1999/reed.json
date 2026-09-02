@@ -2,5 +2,7 @@
   "name": "Reed",
   "tag": "Plant",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "reed.webp",
+  "sprite": "reed.webp"
 }

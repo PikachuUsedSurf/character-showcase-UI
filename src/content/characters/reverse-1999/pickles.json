@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Medium"
     }
-  ]
+  ],
+  "portrait": "pickles.webp",
+  "sprite": "pickles.webp"
 }

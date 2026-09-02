@@ -2,5 +2,7 @@
   "name": "NORA",
   "tag": "Spirit",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "nora.webp",
+  "sprite": "nora.webp"
 }

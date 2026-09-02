@@ -2,5 +2,7 @@
   "name": "APPLe",
   "tag": "Star",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "apple.webp",
+  "sprite": "apple.webp"
 }

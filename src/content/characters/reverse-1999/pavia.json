@@ -2,5 +2,7 @@
   "name": "Pavia",
   "tag": "Beast",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "pavia.webp",
+  "sprite": "pavia.webp"
 }
