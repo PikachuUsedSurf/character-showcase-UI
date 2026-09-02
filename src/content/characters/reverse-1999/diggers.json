@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "diggers.webp",
+  "sprite": "diggers.webp"
 }

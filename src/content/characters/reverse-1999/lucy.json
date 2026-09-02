@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Easy"
     }
-  ]
+  ],
+  "portrait": "lucy.webp",
+  "sprite": "lucy.webp"
 }

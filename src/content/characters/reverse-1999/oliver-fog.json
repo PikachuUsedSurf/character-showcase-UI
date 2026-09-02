@@ -2,5 +2,7 @@
   "name": "Oliver Fog",
   "tag": "Star",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "oliver-fog.webp",
+  "sprite": "oliver-fog.webp"
 }

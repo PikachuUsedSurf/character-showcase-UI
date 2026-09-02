@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "argus.webp",
+  "sprite": "argus.webp"
 }

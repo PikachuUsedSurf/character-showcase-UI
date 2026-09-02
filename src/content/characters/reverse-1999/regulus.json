@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Medium"
     }
-  ]
+  ],
+  "portrait": "regulus.webp",
+  "sprite": "regulus.webp"
 }

@@ -2,5 +2,7 @@
   "name": "Ms. Moissan",
   "tag": "Mineral",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "ms-moissan.webp",
+  "sprite": "ms-moissan.webp"
 }

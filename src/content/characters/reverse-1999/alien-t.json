@@ -2,5 +2,7 @@
   "name": "aliEn T",
   "tag": "Star",
   "rarity": 3,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "alien-t.webp",
+  "sprite": "alien-t.webp"
 }

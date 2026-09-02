@@ -12,5 +12,7 @@
       "label": "Signature Weapon",
       "value": "Remanent Reminiscence"
     }
-  ]
+  ],
+  "portrait": "phoxhunter.webp",
+  "sprite": "phoxhunter.webp"
 }

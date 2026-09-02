@@ -2,5 +2,7 @@
   "name": "TTT",
   "tag": "Star",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "ttt.webp",
+  "sprite": "ttt.webp"
 }

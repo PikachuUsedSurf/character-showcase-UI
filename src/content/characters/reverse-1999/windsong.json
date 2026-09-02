@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Difficult"
     }
-  ]
+  ],
+  "portrait": "windsong.webp",
+  "sprite": "windsong.webp"
 }

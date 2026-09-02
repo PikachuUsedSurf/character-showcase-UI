@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "ms-newbabel.webp",
+  "sprite": "ms-newbabel.webp"
 }

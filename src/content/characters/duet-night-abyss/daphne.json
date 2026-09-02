@@ -33,5 +33,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases CRIT Chance for the character and their nearby teammate(s)"
     }
-  ]
+  ],
+  "portrait": "daphne.webp",
+  "sprite": "daphne.webp"
 }

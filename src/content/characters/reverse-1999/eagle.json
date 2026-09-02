@@ -2,5 +2,7 @@
   "name": "Eagle",
   "tag": "Plant",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "eagle.webp",
+  "sprite": "eagle.webp"
 }

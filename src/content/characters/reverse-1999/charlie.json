@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Foolproof"
     }
-  ]
+  ],
+  "portrait": "charlie.webp",
+  "sprite": "charlie.webp"
 }

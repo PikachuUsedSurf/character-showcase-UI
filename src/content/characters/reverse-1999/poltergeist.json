@@ -2,5 +2,7 @@
   "name": "Poltergeist",
   "tag": "Spirit",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "poltergeist.webp",
+  "sprite": "poltergeist.webp"
 }

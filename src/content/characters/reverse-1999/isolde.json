@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Easy"
     }
-  ]
+  ],
+  "portrait": "isolde.webp",
+  "sprite": "isolde.webp"
 }

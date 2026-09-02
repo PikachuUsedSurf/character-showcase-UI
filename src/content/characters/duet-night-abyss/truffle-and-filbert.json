@@ -28,5 +28,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases Malaise for the character and nearby teammates when 2 or more characters in the team share the same element type."
     }
-  ]
+  ],
+  "portrait": "truffle-and-filbert.webp",
+  "sprite": "truffle-and-filbert.webp"
 }

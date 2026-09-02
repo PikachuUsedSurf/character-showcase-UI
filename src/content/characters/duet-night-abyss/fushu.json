@@ -40,5 +40,7 @@
       "label": "Signature Weapon",
       "value": "Halcyon Gracefall"
     }
-  ]
+  ],
+  "portrait": "fushu.webp",
+  "sprite": "fushu.webp"
 }

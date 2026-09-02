@@ -2,5 +2,7 @@
   "name": "Bunny Bunny",
   "tag": "Beast",
   "rarity": 4,
-  "kitPending": true
+  "kitPending": true,
+  "portrait": "bunny-bunny.webp",
+  "sprite": "bunny-bunny.webp"
 }

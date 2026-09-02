@@ -30,5 +30,7 @@
       "type": "Combat Partner",
       "desc": "[Only effective when deployed as a Combat Partner] Increases DEF for the character and their nearby teammate(s)."
     }
-  ]
+  ],
+  "portrait": "randy.webp",
+  "sprite": "randy.webp"
 }

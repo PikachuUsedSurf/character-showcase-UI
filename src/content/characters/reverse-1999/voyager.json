@@ -17,5 +17,7 @@
       "label": "Ease of Use",
       "value": "Easy"
     }
-  ]
+  ],
+  "portrait": "voyager.webp",
+  "sprite": "voyager.webp"
 }
